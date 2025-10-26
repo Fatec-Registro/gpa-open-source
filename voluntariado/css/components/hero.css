@@ -1,6 +1,7 @@
 @import url('../variables.css');
 @import url('../globals.css');
 
+
 .hero-banner {
     background-color: var(--branco);
     width: 100vw;
@@ -21,8 +22,8 @@
 .hero-content-left {
     text-wrap: nowrap;
     width: 40%;
-    padding-top: 10%;
-    padding-left: 5%;
+    padding-top: 10%;     
+    padding-left: 5%;      
 }
 
 .hero-content-right {
@@ -39,18 +40,18 @@
 
 .hero-content h1 {
    font-weight: bold;
-   font-size: 48px;
+   font-size: 3rem; 
 }
 
 .hero-content p {
-    margin-top: 5%;
-   font-size: 20px;
+    margin-top: 5%;       
+    font-size: 1.25rem;     
 }
 
 .hero-content img {
-    padding-top: 50%;
+    padding-top: 50%;  
 }
 
 .hero-content span {
-    color: var(--laranja)
+    color: var(--laranja);
 }
