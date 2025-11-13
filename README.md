@@ -59,5 +59,5 @@ Todo o trabalho deve seguir o fluxo colaborativo no GitHub para garantir a coer�
 #### Descrição da Página **[Nome da Página - Ex: Home]**
 
 * **Link da Página Hospedada (Deploy):** `[INSERIR O LINK DO DEPLOY AQUI]`
-* **Melhorias Visuais (UI/UX):** [Descreva brevemente as mudanças de design e usabilidade.]
+* **Melhorias Visuais (UI/UX):** [Descreva brevemente as mudanças de design e usabilidade]
 * **Novas Funcionalidades Implementadas:** [Descreva as novas funcionalidades que atendem ao Requisito 4.]
