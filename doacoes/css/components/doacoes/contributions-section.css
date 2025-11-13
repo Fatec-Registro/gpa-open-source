@@ -67,6 +67,7 @@
   object-fit: cover;
   display: block;
   border-radius: 50%;
+  pointer-events: none;
 }
 
 .contrib-card__title {
