@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components/header.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+    <link rel="stylesheet" href="css/components/information-section.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Detalhes do Animal</title>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main class="container">
+    <section class="left-col">
+      <div class="main-image-card">
+        <img id="mainImage" src="assets/apadrinhamento/img1.jpg" alt="Max">
+      </div>
+
+      <div class="thumbnails">
+        <button class="thumb active" data-src="assets/apadrinhamento/img1.jpg">
+          <img src="assets/apadrinhamento/img1.jpg" alt="Max 1">
+        </button>
+        <button class="thumb" data-src="assets/apadrinhamento/img2.avif">
+          <img src="assets/apadrinhamento/img2.avif" alt="Max 2">
+        </button>
+        <button class="thumb" data-src="assets/apadrinhamento/img4.jpg">
+          <img src="assets/apadrinhamento/img4.jpg" alt="Max 3">
+        </button>
+        <button class="thumb more" aria-hidden="true">
+          <span>+5</span>
+        </button>
+      </div>
+
+      <div class="shelter-card">
+        <div class="shelter-ic">
+          <img src="assets/svg/clock.svg" alt="Tempo de abrigo" class="icon-filter">
+        </div>
+        <div>
+          <div class="shelter-label">Tempo de Abrigo</div>
+          <div class="shelter-time">3 Meses</div>
+          <div class="shelter-note">Max está esperando por um padrinho desde maio</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="right-col">
+      <div class="header-row">
+        <h1 class="pet-name">Max</h1>
+
+        <div class="action-icons">
+          <button id="shareBtn" class="icon-btn" title="Compartilhar">
+            <img src="assets/svg/share.svg" alt="Compartilhar" class="icon-filter">
+          </button>
+          <button id="favBtn" class="icon-btn heart" title="Favoritar">
+            <img src="assets/svg/heart.svg" alt="Favoritar" class="icon-filter">
+          </button>
+        </div>
+      </div>
+
+      <div class="tags-row">
+        <span class="tag purple">
+          <img src="assets/svg/dog.svg" alt="Cachorro" class="icon-filter tag-icon">
+          Cachorro
+        </span>
+        <span class="tag yellow">
+          <img src="assets/svg/genre.svg" alt="Macho" class="icon-filter tag-icon">
+          Macho
+        </span>
+      </div>
+
+      <p class="description">
+        Max foi encontrado abandonado em um parque da cidade, magro e com sinais de maus-tratos. Nossos voluntários o resgataram e levaram para tratamento veterinário. Após dois meses de cuidados, Max recuperou-se completamente e hoje é um cachorro saudável e cheio de energia.
+      </p>
+
+      <div class="special-need">
+        <div class="special-icon">
+          <img src="assets/svg/stethoscope.svg" alt="Necessidades especiais" class="icon-filter">
+        </div>
+        <div>
+          <div class="special-title">Necessidades Especiais</div>
+          <div class="special-text">Max precisa de ração especial para animais com sensibilidade estomacal. Seu apadrinhamento ajudará a custear essa necessidade.</div>
+        </div>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-item">
+          <div class="info-label">Idade</div>
+          <div class="info-value">2 Anos</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">Porte</div>
+          <div class="info-value">Pequeno (6.5 kg)</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">Gênero</div>
+          <div class="info-value">Macho</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">Boca</div>
+          <div class="info-value">Pug</div>
+        </div>
+      </div>
+
+      <div class="buttons-row">
+        <button class="btn primary" id="sponsorBtn">
+          <img src="assets/svg/hand-shake.svg" alt="Apadrinhar" class="btn-icon">
+          Apadrinhar o Max
+        </button>
+
+        <button class="btn secondary" id="contactBtn">
+          <img src="assets/svg/chat.svg" alt="Apadrinhar" class="btn-icon">
+          Fale com o Responsável
+        </button>
+      </div>
+    </section>
+  </main>
+
+
+    
+
+    <div id="footer-placeholder"></div>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('header.html')
+                .then(response => {
+                    if (!response.ok) throw new Error(`Erro ao carregar header: ${response.status}`);
+                    return response.text();
+                })
+                .then(data => {
+                    document.getElementById('header-placeholder').innerHTML = data;
+                })
+                .catch(error => console.error('Erro ao inserir header:', error));
+
+            fetch('footer.html')
+                .then(response => {
+                    if (!response.ok) throw new Error(`Erro ao carregar footer: ${response.status}`);
+                    return response.text();
+                })
+                .then(data => {
+                    document.getElementById('footer-placeholder').innerHTML = data;
+                })
+                .catch(error => console.error('Erro ao inserir footer:', error));
+        });
+
+       document.addEventListener('DOMContentLoaded', () => {
+    const thumbs = document.querySelectorAll('.thumb');
+    const mainImage = document.getElementById('mainImage');
+
+    thumbs.forEach(t => {
+        t.addEventListener('click', () => {
+            if(t.classList.contains('more')) return;
+            
+            thumbs.forEach(x => x.classList.remove('active'));
+            t.classList.add('active');
+
+            const src = t.getAttribute('data-src');
+            if (src){
+                mainImage.src = src;
+            }
+        });
+    });
+    
+      const favBtn = document.getElementById('favBtn');
+    let favorited = false;
+    
+    favBtn.addEventListener('click', () => {
+        favorited = !favorited;
+        if (favorited) {
+            favBtn.classList.add('fav-on');
+        } else {
+            favBtn.classList.remove('fav-on');
+        }
+    });
+
+    const shareBtn = document.getElementById('shareBtn');
+    shareBtn.addEventListener('click', async () => {
+        const shareData = {
+            title: 'Max — Adoção',
+            text: 'Veja o perfil do Max para apadrinhar!',
+            url: window.location.href
+        };
+        if (navigator.share) {
+            try {
+                await navigator.share(shareData);
+            } catch (err) {
+                console.log('Share canceled', err);
+            }
+        } else {
+            navigator.clipboard?.writeText(window.location.href).then(() => {
+                alert('Link copiado para a área de transferência!');
+            }, () => {
+                alert('Não foi possível compartilhar — copie a URL manualmente.');
+            });
+        }
+    });
+
+});
+    </script>
+</body>
+</html>
