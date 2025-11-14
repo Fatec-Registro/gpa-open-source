@@ -147,3 +147,124 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Contato Section */
+.contato-section {
+    background: #5B21B6;
+    color: white;
+    padding: 80px 20px;
+    position: relative;
+}
+
+.wave-divider {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-divider svg {
+    display: block;
+    width: 100%;
+    height: 80px;
+}
+
+.wave-divider.top {
+    transform: rotate(180deg);
+    margin-bottom: -1px;
+}
+
+.contato-content {
+    width: 100%;
+}
+
+.contato-header h2 {
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.highlight-orange {
+    color: #FF8C00;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.contact-cards,
+.contact-info-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.contact-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    min-height: 100%;
+}
+
+.contact-card:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateX(10px);
+}
+
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #FF8C00, #FFA500);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.contact-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: white;
+}
+
+.contact-card p {
+    opacity: 0.9;
+    font-size: 1rem;
+    color: white;
+}
+
+.contact-card p a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.contact-card p a:hover {
+    color: #FFA500;
+}
+
+@media (max-width: 968px) {
+    .contact-cards,
+    .contact-info-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .contato-header h2 {
+        font-size: 2rem;
+    }
+}
