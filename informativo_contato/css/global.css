@@ -254,6 +254,7 @@ body {
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
+  cursor: pointer;
 }
 
 .contact-card p a:hover {
@@ -354,5 +355,45 @@ body {
 @media (max-width: 640px) {
   .hero-text h1 {
     font-size: 2rem;
+  }
+}
+
+/* Source Attribution */
+.source-attribution {
+  max-width: 900px;
+  margin: 40px auto 0;
+  padding: 20px 30px;
+  background: linear-gradient(135deg, rgba(91, 33, 182, 0.05), rgba(255, 140, 0, 0.05));
+  border: 1px solid rgba(91, 33, 182, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.source-attribution p {
+  color: #666;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.source-attribution a {
+  color: #5b21b6;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.source-attribution a:hover {
+  color: #ff8c00;
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .source-attribution {
+    margin: 30px 20px 0;
+    padding: 15px 20px;
+  }
+  
+  .source-attribution p {
+    font-size: 0.9rem;
   }
 }
