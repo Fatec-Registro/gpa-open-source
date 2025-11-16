@@ -67,10 +67,10 @@ Todo o trabalho deve seguir o fluxo colaborativo no GitHub para garantir a coer�
 | Integrante | Função no Projeto | Nickname  |
 | :--- | :--- | :--- |
 | **Renato Hioji Okamoto Odake** | Desenvolvedor Frontend | RenatoHioji |
-| **Saulo de Freitas** | Desenvolvedor Frontend | [GitHub ID] |
-| **Ana Cristina Domingues** | Designer/UX/Desenvolvedor Frontend | [GitHub ID] |
-| **Ana Luiza Lara Pupo** | Designer/UXDesigner/UX | [GitHub ID] |
-| **Murilo dos Santos Mescyszyn** | Desenvolvedor Frontend | [GitHub ID] |
+| **Saulo de Freitas** | Desenvolvedor Frontend | Saulo217 |
+| **Ana Cristina Domingues** | Designer/UX/Desenvolvedor Frontend | Anacristinadomingues |
+| **Ana Luiza Lara Pupo** | Designer/UXDesigner/Desenvolvedor Frontend | analarap |
+| **Murilo dos Santos Mescyszyn** | Desenvolvedor Frontend | [GitHub ID] | murilo587
 
 #### Descrição da Página - Voluntariado
 
