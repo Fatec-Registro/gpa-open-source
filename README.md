@@ -45,24 +45,6 @@ Todo o trabalho deve seguir o fluxo colaborativo no GitHub para garantir a coer�
 
 ## 📄 Documentação da Equipe
 
-***(Cada equipe deve incluir um bloco como este no README ou em um arquivo separado, de acordo com o combinado)***
-
-### Equipe: [Nome da Sua Equipe - Ex: Aquasense]
-
-| Integrante | Função no Projeto | Nickname  |
-| :--- | :--- | :--- |
-| **[Nome Completo do Aluno 1]** | Desenvolvedor Frontend | [GitHub ID] |
-| **[Nome Completo do Aluno 2]** | Designer/UX | [GitHub ID] |
-| **[Nome Completo do Aluno 3]** | Desenvolvedor Backend | [GitHub ID] |
-| ... | ... | ... |
-
-
-#### Descrição da Página **[Nome da Página - Ex: Home]**
-
-* **Link da Página Hospedada (Deploy):** `[INSERIR O LINK DO DEPLOY AQUI]`
-* **Melhorias Visuais (UI/UX):** [Descreva brevemente as mudanças de design e usabilidade]
-* **Novas Funcionalidades Implementadas:** [Descreva as novas funcionalidades que atendem ao Requisito 4.]
-
 ### Equipe: Sunside
 | Integrante | Função no Projeto | Nickname  |
 | :--- | :--- | :--- |
@@ -82,10 +64,10 @@ Todo o trabalho deve seguir o fluxo colaborativo no GitHub para garantir a coer�
 
 | Integrante | Função no Projeto | Nickname  |
 | :--- | :--- | :--- |
-| **Ana Luisa Lima** | Desenvolvedora Frontend | [analu-lima] |
-| **Gabriel Henrique Rodrigues Salles** | Designer/UX & Desenvolvedor Frontend | [GabrielRodriguez153] |
-| **Letícia Sayuri Imasato** | Designer/UX & Desenvolvedora Frontend | [lesyimasato] |
-| **Nicolle Vitalino Fujii** | Desenvolvedora Frontend | [vFujii] |
+| **Ana Luisa Lima** | Desenvolvedora Frontend | analu-lima |
+| **Gabriel Henrique Rodrigues Salles** | Designer/UX & Desenvolvedor Frontend | GabrielRodriguez153 |
+| **Letícia Sayuri Imasato** | Designer/UX & Desenvolvedora Frontend | lesyimasato |
+| **Nicolle Vitalino Fujii** | Desenvolvedora Frontend | vFujii |
 
 #### Descrição da Página de Apadrinhamento 🐾
 

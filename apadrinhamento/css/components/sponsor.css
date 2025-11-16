@@ -58,6 +58,23 @@ li {
   gap: 12px;
 }
 
+.filter-animal {
+  cursor: pointer !important;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.filter-animal:hover {
+  background-color: #f0f0f0;
+}
+
+.filter-animal.active {
+  background-color: #eee7f6;
+  color: var(--roxo);
+  font-weight: 600;
+}
+
 .filter-options input[type="checkbox"] {
   appearance: none;
   -webkit-appearance: none;
@@ -155,7 +172,8 @@ li {
   user-select: none;
 }
 
-.pagination button {
+.pagination button,
+.pagination-btn {
   background: transparent;
   border: none;
   font-size: 1rem;
@@ -163,16 +181,28 @@ li {
   cursor: pointer;
   color: var(--roxo);
   transition: 0.2s;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.pagination button.active {
+.pagination button img,
+.pagination-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.pagination button.active,
+.pagination-btn.active {
   background: #eee7f6;
   border-radius: 6px;
   color: var(--roxo);
   font-weight: bold;
 }
 
-.pagination button:hover:not(.active) {
+.pagination button:hover:not(.active),
+.pagination-btn:hover:not(.active) {
   color: var(--laranja);
 }
 
