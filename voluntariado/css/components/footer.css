@@ -1,11 +1,10 @@
 @import url('../variables.css');
-@import url('../global.css');
+@import url('../globals.css');
 
 footer {
   background-color: var(--roxo);
   width: 100%;
   color: var(--branco);
-  border-top: 2px solid var(--branco);
   padding: clamp(2rem, 6vw, 7rem) 1.5rem;
   display: flex;
   flex-direction: column;
