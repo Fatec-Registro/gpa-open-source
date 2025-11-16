@@ -23,23 +23,8 @@ Nosso principal objetivo é modernizar o website utilizando as tecnologias e met
 
 ## 🛠️ Tecnologias Utilizadas
 
-Este projeto deve utilizar **stacks e tecnologias ministradas durante o curso**. (A equipe líder ou responsável pode listar as tecnologias principais aqui, como React, Node.js, Kotlin, Banco de Dados X, etc.)
-
-* **Frontend Principal:** HTML5, CSS3, JavaScript
-* **Framework/Biblioteca:** [Exemplo: React.js, Vue.js, jQuery]
-* **Backend/Lógica:** [Exemplo: Node.js, Express, **Kotlin** (se aplicável)]
-* **Hospedagem (Deploy):** [Exemplo: Vercel/GitHub Pages]
-
----
-
-## 🚀 Requisitos de Contribuição
-
-Todo o trabalho deve seguir o fluxo colaborativo no GitHub para garantir a coerência e a rastreabilidade do código.
-
-1.  **Fork e Clone:** Faça um *fork* do repositório e clone-o em sua máquina local.
-2.  **Branches:** Crie uma *branch* específica para a sua funcionalidade/página (Ex: `feature/rebranding-home` ou `bugfix/contato-responsivo`).
-3.  **Commits:** Realize *commits* frequentes, coerentes e construtivos. **Este é um critério de avaliação individual.**
-4.  **Pull Requests (PR):** Abra um Pull Request para a *branch* principal (`main` ou `develop`) para solicitar a fusão (merge) do seu trabalho.
+* **Frontend Principal:** HTML, CSS, JavaScript
+* **Hospedagem (Deploy):** Vercel
 
 ---
 
