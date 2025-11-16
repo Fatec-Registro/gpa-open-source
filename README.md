@@ -17,7 +17,7 @@ Nosso principal objetivo é modernizar o website utilizando as tecnologias e met
 | **Apadrinhamento** | Antravision | EM DESENVOLVIMENTO | [Link Aqui] |
 | **Voluntariado** | Tagarela | EM DESENVOLVIMENTO | [Link Aqui] |
 | **Informativo e Contato** | Cattus | FINALIZADO | [Informativo e Contato](https://gpa-informativo-e-contato.vercel.app/) |
-| **Financeiro** | CatBioSearch | EM DESENVOLVIMENTO | [Link Aqui] |
+| **Financeiro** | CatBioSearch | EM DESENVOLVIMENTO | [Financeiro](https://gpafinanceiro.vercel.app) |
 
 ---
 
