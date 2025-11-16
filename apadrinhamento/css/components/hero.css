@@ -1,0 +1,55 @@
+@import url("../variables.css");
+@import url("../globals.css");
+
+.hero-banner {
+  background-color: #eee7f6;
+  width: 100vw;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.hero-content {
+  background-color: var(--roxo);
+  color: var(--branco);
+  width: 100%;
+  height: 100%;
+  padding: 60px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  clip-path: ellipse(95% 100% at 50% 0%);
+}
+
+.hero-content-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 60%;
+  gap: 29px;
+}
+
+.hero-content-text p {
+  margin-inline: 50px;
+}
+
+.hero-content span {
+  color: var(--laranja);
+}
+
+.hero-sponsor-button {
+  display: inline-block;
+  background-color: var(--laranja);
+  padding: 13px 36px;
+  border-radius: 40px;
+  border: none;
+  color: var(--branco);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+.hero-sponsor-button:hover {
+  transform: translateY(-5px);
+}

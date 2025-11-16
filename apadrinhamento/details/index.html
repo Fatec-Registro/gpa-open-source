@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components/header.css">
+  <link rel="stylesheet" href="css/components/footer.css">
+  <link rel="stylesheet" href="css/components/information-section.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title>Detalhes do Animal</title>
+</head>
+
+<body>
+  <header>
+    <img alt="Logo do GPA" src="assets/svg/logo_gpa.svg">
+    <nav>
+        <a href="../../home/index.html">Home</a>
+        <a href="../../adocoes/index.html">Adoções</a>
+        <a href="../../apadrinhamento/index.html">Apadrinhamento</a>
+        <a href="../../voluntariado/index.html">Voluntariado</a>
+        <a href="../../catbiosearch-financeiro/index.html">Financeiro</a>
+        <a href="../../informativo_contato/index.html">Informativo</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="left-col">
+      <div class="main-image-card">
+        <img id="mainImage" src="assets/apadrinhamento/img1.jpg" alt="Max">
+      </div>
+
+      <div class="thumbnails">
+        <button class="thumb active" data-src="assets/apadrinhamento/img1.jpg">
+          <img src="assets/apadrinhamento/img1.jpg" alt="Max 1">
+        </button>
+        <button class="thumb" data-src="assets/apadrinhamento/img2.avif">
+          <img src="assets/apadrinhamento/img2.avif" alt="Max 2">
+        </button>
+        <button class="thumb" data-src="assets/apadrinhamento/img4.jpg">
+          <img src="assets/apadrinhamento/img4.jpg" alt="Max 3">
+        </button>
+        <button class="thumb more" aria-hidden="true">
+          <span>+5</span>
+        </button>
+      </div>
+
+      <div class="shelter-card">
+        <div class="shelter-ic">
+          <img src="assets/svg/clock.svg" alt="Tempo de abrigo" class="icon-filter">
+        </div>
+        <div>
+          <div class="shelter-label">Tempo de Abrigo</div>
+          <div class="shelter-time">3 Meses</div>
+          <div class="shelter-note">Max está esperando por um padrinho desde maio</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="right-col">
+      <div class="header-row">
+        <h1 class="pet-name">Max</h1>
+
+        <div class="action-icons">
+          <button id="shareBtn" class="icon-btn" title="Compartilhar">
+            <img src="assets/svg/share.svg" alt="Compartilhar" class="icon-filter">
+          </button>
+          <button id="favBtn" class="icon-btn heart" title="Favoritar">
+            <img src="assets/svg/heart.svg" alt="Favoritar" class="icon-filter">
+          </button>
+        </div>
+      </div>
+
+      <div class="tags-row">
+        <span class="tag purple">
+          <img src="assets/svg/dog.svg" alt="Cachorro" class="icon-filter tag-icon">
+          Cachorro
+        </span>
+        <span class="tag yellow">
+          <img src="assets/svg/genre.svg" alt="Macho" class="icon-filter tag-icon">
+          Macho
+        </span>
+      </div>
+
+      <p class="description">
+        Max foi encontrado abandonado em um parque da cidade, magro e com sinais de maus-tratos. Nossos voluntários o
+        resgataram e levaram para tratamento veterinário. Após dois meses de cuidados, Max recuperou-se completamente e
+        hoje é um cachorro saudável e cheio de energia.
+      </p>
+
+      <div class="special-need">
+        <div class="special-icon">
+          <img src="assets/svg/stethoscope.svg" alt="Necessidades especiais" class="icon-filter">
+        </div>
+        <div>
+          <div class="special-title">Necessidades Especiais</div>
+          <div class="special-text">Max precisa de ração especial para animais com sensibilidade estomacal. Seu
+            apadrinhamento ajudará a custear essa necessidade.</div>
+        </div>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-item">
+          <div class="info-label">Idade</div>
+          <div class="info-value">2 Anos</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">Porte</div>
+          <div class="info-value">Pequeno (6.5 kg)</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">Gênero</div>
+          <div class="info-value">Macho</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">Boca</div>
+          <div class="info-value">Pug</div>
+        </div>
+      </div>
+
+      <div class="buttons-row">
+        <button class="btn primary" id="sponsorBtn">
+          <img src="assets/svg/hand-shake.svg" alt="Apadrinhar" class="btn-icon">
+          Apadrinhar o Max
+        </button>
+
+        <button class="btn secondary" id="contactBtn">
+          <img src="assets/svg/chat.svg" alt="Apadrinhar" class="btn-icon">
+          Fale com o Responsável
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <div class="sec-container">
+    <div class="title-content">
+      <div class="title-icon">
+        <img class="img-sec" src="assets\svg\calculator-svgrepo-com.svg" alt="calculator">
+      </div>
+      <h2 class="title">Custos Mensais</h1>
+    </div>
+    <div class="collapsible-list">
+      <p>Cálculo baseado em um mês normal com consultas, vacinas e acompanhamento usual. Mesmo que hajam gastos
+        emergenciais eles não serão adicionados além da ajuda mensal.</p>
+      <button type="button" class="collapsible">
+        <img src="assets\svg\stethoscope.svg" class="collapsible-icon">Equipe Veterinária<span class="price">R$
+          60,00/mês</span></button>
+      <div class="content">
+        <div class="content-inner">
+          <p>Garantimos consultas regulares, exames de rotina e atendimento em casos de emergência. Esse acompanhamento
+            é essencial para manter o animal saudável e prevenir problemas antes que eles se tornem graves.
+          </p>
+        </div>
+      </div>
+      <button type="button" class="collapsible"><img src="assets\svg\shower-1-svgrepo-com.svg"
+          class="collapsible-icon">Banho<span class="price">R$ 30,00/mês</span></button>
+      <div class="content">
+        <div class="content-inner">
+          <p>Inclui banhos periódicos, escovação e cuidados básicos de higiene. Manter o animal limpo não só melhora o
+            bem-estar, como também ajuda na prevenção de alergias e doenças de pele.
+          </p>
+        </div>
+      </div>
+      <button type="button" class="collapsible"><img src="assets\svg\syringe-svgrepo-com.svg"
+          class="collapsible-icon">Vacinação<span class="price">R$ 6,70/ano</span></button>
+      <div class="content">
+        <div class="content-inner">
+          <p>Todos os animais são vacinados conforme o cronograma veterinário. As vacinas protegem contra doenças sérias e garantem que eles estejam sempre seguros e protegidos.
+          </p>
+        </div>
+      </div>
+      <button type="button" class="collapsible"><img src="assets\svg\bug-svgrepo-com.svg"
+          class="collapsible-icon">Antipulgas e Vermifugação<span class="price">R$ 100,00/mês</span></button>
+      <div class="content">
+        <div class="content-inner">
+          <p>Os animais recebem proteção contínua contra pulgas, carrapatos e vermes. Esses cuidados evitam parasitas que podem causar desconforto e doenças, garantindo mais segurança e saúde.
+          </p>
+        </div>
+      </div>
+      <button type="button" class="collapsible"><img src="assets\svg\pills-svgrepo-com.svg"
+          class="collapsible-icon">Necessidades Especiais<span class="price">R$ 60,70/mês</span></button>
+      <div class="content">
+        <div class="content-inner">
+          <p><span class="med-extra">Diacereina de 25mg:</span> É um medicamento utilizado para aliviar dores e inflamações nas articulações. Ela ajuda a reduzir o desconforto causado por doenças articulares, melhorando a mobilidade e o bem-estar do animal a longo prazo. <span class="med-extra-price">R$ 32,50</span></p>
+          <p><span class="med-extra">UCII 20mg:</span> É um colágeno não desnaturado que auxilia na saúde das articulações. Ele ajuda a melhorar a flexibilidade, reduzir dores e apoiar animais que têm dificuldades para se movimentar, especialmente os que possuem problemas articulares crônicos. <span class="med-extra-price">R$ 28,20</span></p>
+        </div>
+      </div>
+      <div class="total-box">
+        TOTAL MENSAL<span class="total-price">R$ 257,40/mês</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec-container">
+    <div class="title-content">
+      <div class="title-icon">
+        <img class="img-sec" src="assets\svg\paw-svgrepo-com.svg" alt="paw">
+      </div>
+      <h2 class="title">Veja Também</h1>
+    </div>
+    <div class="animal-card-container">
+      <div class="animal-card">
+        <img class="avatar" src="assets\apadrinhamento\victor-g-N04FIfHhv_k-unsplash.jpg" alt="Marley">
+        <h3>Apadrinhe o Marley</h3>
+        <div class="tags-row">
+          <span class="tag purple">
+            <img src="assets/svg/dog.svg" alt="Cachorro" class="icon-filter tag-icon">Cachorro</span>
+          <span class="tag yellow">
+            <img src="assets/svg/genre.svg" alt="Macho" class="icon-filter tag-icon">Macho</span>
+        </div>
+        <p class="desc">Marley é um cão muito brincalhão e energético que adora correr.</p>
+        <a class="btn primary" href="#">Conheça o Marley</a>
+      </div>
+      <div class="animal-card">
+        <img class="avatar" src="assets\apadrinhamento\alvan-nee-brFsZ7qszSY-unsplash.jpg" alt="Stelar">
+        <h3>Apadrinhe a Stelar</h3>
+        <div class="tags-row">
+          <span class="tag purple">
+            <img src="assets/svg/dog.svg" alt="Cachorro" class="icon-filter tag-icon">Cachorro</span>
+          <span class="tag yellow">
+            <img src="assets/svg/genre.svg" alt="Fêmea" class="icon-filter tag-icon">Fêmea</span>
+        </div>
+        <p class="desc">Stelar é uma cachorrinha muito carinhosa que adora um colo quentinho.</p>
+        <a class="btn primary" href="#">Conheça a Stelar</a>
+      </div>
+      <div class="animal-card">
+        <img class="avatar" src="assets\apadrinhamento\amber-kipp-75715CVEJhI-unsplash.jpg" alt="Rochele">
+        <h3>Apadrinhe a Rochele</h3>
+        <div class="tags-row">
+          <span class="tag purple">
+            <img src="assets/svg/cat.svg" alt="Gato" class="icon-filter tag-icon">Gato</span>
+          <span class="tag yellow">
+            <img src="assets/svg/genre.svg" alt="Fêmea" class="icon-filter tag-icon">Fêmea</span>
+        </div>
+        <p class="desc">Rochele é uma gatinha muito tranquila e amorosa com crianças.</p>
+        <a class="btn primary" href="#">Conheça a Rochele</a>
+      </div>
+      <div class="animal-card">
+        <img class="avatar" src="assets\apadrinhamento\karsten-winegeart-Qb7D1xw28Co-unsplash.jpg" alt="Davi">
+        <h3>Apadrinhe o Davi</h3>
+        <div class="tags-row">
+          <span class="tag purple">
+            <img src="assets/svg/dog.svg" alt="Cachorro" class="icon-filter tag-icon">Cachorro</span>
+          <span class="tag yellow">
+            <img src="assets/svg/genre.svg" alt="Macho" class="icon-filter tag-icon">Macho</span>
+        </div>
+        <p class="desc">Davi é um cão muito inteligente que adora aprender novos truques.</p>
+        <a class="btn primary" href="#">Conheça o Davi</a>
+      </div>
+    </div>
+  </div>
+ <footer>
+    <img src="assets/svg/logo_gpa.svg" alt="Logo do GPA">
+    <p>Ajudar é o primeiro passo para transformar o mundo e começa com um simples gesto.</p>
+    <div class="footer-social-media">
+        <div class="footer-square">
+            <img src="assets/svg/instagram.svg" alt="Logo do Instagram">
+        </div>
+                <div class="footer-square">
+            <img src="assets/svg/twitter.svg" alt="Logo do Twitter">
+        </div>
+                <div class="footer-square">
+            <img src="assets/svg/youtube.svg" alt="Logo do Youtube">
+        </div>
+                <div class="footer-square">
+            <img src="assets/svg/facebook.svg" alt="Logo do Facebook">
+        </div>
+                <div class="footer-square">
+            <img src="assets/svg/linkedln.svg" alt="Logo do Linkedln">
+        </div>
+    </div>
+    <p>&copy; 2025 ONG GPA - Grupo de Proteção Animal</p>
+    <p>Todos os direitos reservados.</p>
+</footer>
+  <script>
+    const petsData = [
+        { 
+          nome: "Ninja", 
+          img: "assets/svg/pets/ninja.avif", 
+          sexo: "female", 
+          tipo: "dog", 
+          desde: "2015", 
+          custo: "300,00",
+          description: "Ninja é uma cachorrinha amorosa e brincalhona que adora companhia. Foi resgatada de uma situação difícil e agora está pronta para receber todo o carinho que merece.",
+          specialText: "Ninja precisa de ração hipoalergênica e acompanhamento regular com veterinário devido a sensibilidade digestiva.",
+          shelterNote: "Ninja está esperando por um padrinho desde 2015"
+        },
+        { 
+          nome: "Cheetos", 
+          img: "assets/svg/pets/cheetos.avif", 
+          sexo: "female", 
+          tipo: "dog", 
+          desde: "2015", 
+          custo: "300,00",
+          description: "Cheetos é uma pequena princesa cheia de personalidade. Ela adora brincar e fazer amizades. Sua energia é contagiante e traz alegria a todos ao seu redor.",
+          specialText: "Cheetos requer suplementação vitamínica regularmente para manter sua saúde e disposição.",
+          shelterNote: "Cheetos está esperando por um padrinho desde 2015"
+        },
+        { 
+          nome: "Tom", 
+          img: "assets/svg/pets/tom.avif", 
+          sexo: "male", 
+          tipo: "dog", 
+          desde: "2015", 
+          custo: "300,00",
+          description: "Tom é um cachorro dócil e tranquilo que se adapta facilmente a novos ambientes. Ele aprecia passeios calmos e momentos de descanso ao lado de seus companheiros.",
+          specialText: "Tom necessita de medicação contínua para controle de pressão arterial e consultas periódicas.",
+          shelterNote: "Tom está esperando por um padrinho desde 2015"
+        },
+        { 
+          nome: "Romena", 
+          img: "assets/svg/pets/romena.avif", 
+          sexo: "female", 
+          tipo: "dog", 
+          desde: "2015", 
+          custo: "300,00",
+          description: "Romena é uma gatinha delicada e carinhosa. Ela gosta de ambiente calmo e aprecia as demonstrações de carinho de forma suave. Uma companheira perfeita para quem ama gatos.",
+          specialText: "Romena precisa de ração premium para felinos e acompanhamento veterinário regular.",
+          shelterNote: "Romena está esperando por um padrinho desde 2015"
+        },
+        { 
+          nome: "Olivia", 
+          img: "assets/svg/pets/olivia.avif", 
+          sexo: "female", 
+          tipo: "dog", 
+          desde: "2015", 
+          custo: "300,00",
+          description: "Olivia é uma cachorra elegante e bem comportada. Ela tem um temperamento equilibrado e se dá bem com pessoas de todas as idades. Uma verdadeira dama entre os cães.",
+          specialText: "Olivia requer cuidados especiais com a pele e banhos regularizados com xampus específicos.",
+          shelterNote: "Olivia está esperando por um padrinho desde 2015"
+        },
+        { 
+          nome: "Paçoca", 
+          img: "assets/svg/pets/pacoca.avif", 
+          sexo: "female", 
+          tipo: "dog", 
+          desde: "2015", 
+          custo: "300,00",
+          description: "Paçoca é uma gatinha independente mas carinhosa. Ela gosta de explorar seu ambiente e de ótimas sessões de brincadeira. Uma gata cheia de personalidade.",
+          specialText: "Paçoca precisa de suplementação de taurina e acompanhamento oftalmológico anual.",
+          shelterNote: "Paçoca está esperando por um padrinho desde 2015"
+        },
+        { 
+          nome: "Pechincha", 
+          img: "assets/svg/pets/pechincha.avif", 
+          sexo: "male", 
+          tipo: "dog", 
+          desde: "2015", 
+          custo: "300,00",
+          description: "Pechincha é um cachorro alegre e energético que adora brincar. Seu entusiasmo é contagiante e ele traz muita diversão para qualquer lar que o receba.",
+          specialText: "Pechincha necessita de exercício regular e ração balanceada para manter seu peso ideal.",
+          shelterNote: "Pechincha está esperando por um padrinho desde 2015"
+        },
+        { 
+          nome: "Joana", 
+          img: "assets/svg/pets/joana.avif", 
+          sexo: "female", 
+          tipo: "dog", 
+          desde: "2015", 
+          custo: "300,00",
+          description: "Joana é uma gatinha meiga e afetuosa. Ela adora receber carinho e é muito leal com seus donos. Uma companheira perfeita para momentos de tranquilidade.",
+          specialText: "Joana precisa de monitoramento dental e limpeza profissional periódica.",
+          shelterNote: "Joana está esperando por um padrinho desde 2015"
+        },
+        { 
+          nome: "Mário", 
+          img: "assets/svg/pets/mario.avif", 
+          sexo: "male", 
+          tipo: "dog", 
+          desde: "2015", 
+          custo: "300,00",
+          description: "Mário é um cachorro inteligente e obediente. Ele aprende rapidamente novos comandos e é muito responsivo ao treinamento. Uma excelente companhia para famílias.",
+          specialText: "Mário requer estimulação mental através de brinquedos interativos e acompanhamento neurológico.",
+          shelterNote: "Mário está esperando por um padrinho desde 2015"
+        }
+    ];
+
+    function readQueryOrStoragePet() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const pet = {};
+
+      for (const [key, value] of urlParams.entries()) {
+        pet[key] = value;
+      }
+
+      if (!Object.keys(pet).length) {
+        try {
+          const stored = localStorage.getItem('selectedPet');
+          if (stored) return JSON.parse(stored);
+        } catch (err) {
+          console.error('Erro ao ler selectedPet do localStorage', err);
+        }
+        return null;
+      }
+
+      return pet;
+    }
+
+    function populatePetDetails(incomingPet) {
+      if (!incomingPet) return;
+
+      try {
+        const mainImage = document.getElementById('mainImage');
+        const petNameEl = document.querySelector('.pet-name');
+        const sponsorBtn = document.getElementById('sponsorBtn');
+        const shelterTime = document.querySelector('.shelter-time');
+        const shelterNote = document.querySelector('.shelter-note');
+        const purpleTag = document.querySelector('.tags-row .tag.purple');
+        const yellowTag = document.querySelector('.tags-row .tag.yellow');
+        const descriptionEl = document.querySelector('.description');
+        const specialTextEl = document.querySelector('.special-text');
+
+        const fullPetData = petsData.find(pet => pet.nome === incomingPet.nome);
+
+        if (incomingPet.img && mainImage) {
+          let imagePath = incomingPet.img;
+          if (!/^https?:\/\//i.test(imagePath) && !imagePath.startsWith('/') && !imagePath.startsWith('..')) {
+            imagePath = `../${imagePath}`;
+          }
+          mainImage.src = imagePath;
+        }
+
+        if (incomingPet.nome && petNameEl) petNameEl.textContent = incomingPet.nome;
+        if (sponsorBtn && incomingPet.nome) sponsorBtn.innerHTML = `<img src="assets/svg/hand-shake.svg" alt="Apadrinhar" class="btn-icon">Apadrinhar o ${incomingPet.nome}`;
+        if (incomingPet.desde && shelterTime) shelterTime.textContent = `No abrigo desde ${incomingPet.desde}`;
+        
+        if (fullPetData && shelterNote) shelterNote.textContent = fullPetData.shelterNote;
+
+        if (purpleTag && incomingPet.tipo) {
+          const tipoTexto = incomingPet.tipo === 'dog' ? 'Cachorro' : 'Gato';
+          const tipoIcon = incomingPet.tipo === 'dog' ? 'dog.svg' : 'cat.svg';
+          purpleTag.innerHTML = `<img src="assets/svg/${tipoIcon}" alt="${tipoTexto}" class="icon-filter tag-icon">${tipoTexto}`;
+        }
+
+        if (yellowTag && incomingPet.sexo) {
+          const sexoTexto = incomingPet.sexo === 'male' ? 'Macho' : 'Fêmea';
+          yellowTag.innerHTML = `<img src="assets/svg/genre.svg" alt="Gênero" class="icon-filter tag-icon"> ${sexoTexto}`;
+        }
+
+        if (fullPetData && descriptionEl) descriptionEl.textContent = fullPetData.description;
+        if (fullPetData && specialTextEl) specialTextEl.textContent = fullPetData.specialText;
+
+      } catch (err) {
+        console.error('Erro ao popular dados do pet:', err);
+      }
+    }
+
+    function populateOtherPets(currentPetName) {
+      const container = document.querySelector('.animal-card-container');
+      if (!container) return;
+
+      const otherPets = petsData.filter(pet => pet.nome !== currentPetName).slice(0, 4);
+
+      container.innerHTML = '';
+
+      otherPets.forEach(pet => {
+        const petCard = document.createElement('div');
+        petCard.className = 'animal-card';
+
+        const tipoTexto = pet.tipo === 'dog' ? 'Cachorro' : 'Gato';
+        const tipoIcon = pet.tipo === 'dog' ? 'dog.svg' : 'cat.svg';
+        const sexoTexto = pet.sexo === 'male' ? 'Macho' : 'Fêmea';
+
+        let imagePath = pet.img;
+        if (!/^https?:\/\//i.test(imagePath) && !imagePath.startsWith('/') && !imagePath.startsWith('..')) {
+          imagePath = `../${imagePath}`;
+        }
+
+        const params = new URLSearchParams({
+          nome: pet.nome,
+          sexo: pet.sexo,
+          desde: pet.desde,
+          custo: pet.custo,
+          img: pet.img,
+          tipo: pet.tipo
+        });
+
+        petCard.innerHTML = `
+          <img class="avatar" src="${imagePath}" alt="${pet.nome}">
+          <h3>Apadrinhe o ${pet.nome}</h3>
+          <div class="tags-row">
+            <span class="tag purple">
+              <img src="assets/svg/${tipoIcon}" alt="${tipoTexto}" class="icon-filter tag-icon">${tipoTexto}
+            </span>
+            <span class="tag yellow">
+              <img src="assets/svg/genre.svg" alt="${sexoTexto}" class="icon-filter tag-icon">${sexoTexto}
+            </span>
+          </div>
+          <p class="desc">${pet.nome} é um ${tipoTexto.toLowerCase()} adorável esperando por um padrinho.</p>
+          <a class="btn primary" href="index.html?${params.toString()}">Conheça o ${pet.nome}</a>
+        `;
+
+        container.appendChild(petCard);
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const incomingPet = readQueryOrStoragePet();
+      
+      if (incomingPet && incomingPet.nome) {
+        populatePetDetails(incomingPet);
+        populateOtherPets(incomingPet.nome);
+      }
+
+      const thumbs = document.querySelectorAll('.thumb');
+      const mainImage = document.getElementById('mainImage');
+
+      thumbs.forEach(t => {
+        t.addEventListener('click', () => {
+          if (t.classList.contains('more')) return;
+
+          thumbs.forEach(x => x.classList.remove('active'));
+          t.classList.add('active');
+
+          const src = t.getAttribute('data-src');
+          if (src) {
+            mainImage.src = src;
+          }
+        });
+      });
+
+      const favBtn = document.getElementById('favBtn');
+      let favorited = false;
+
+      favBtn.addEventListener('click', () => {
+        favorited = !favorited;
+        if (favorited) {
+          favBtn.classList.add('fav-on');
+        } else {
+          favBtn.classList.remove('fav-on');
+        }
+      });
+
+      const shareBtn = document.getElementById('shareBtn');
+      shareBtn.addEventListener('click', async () => {
+        const shareData = {
+          title: 'Max — Adoção',
+          text: 'Veja o perfil do Max para apadrinhar!',
+          url: window.location.href
+        };
+        if (navigator.share) {
+          try {
+            await navigator.share(shareData);
+          } catch (err) {
+            console.log('Share canceled', err);
+          }
+        } else {
+          navigator.clipboard?.writeText(window.location.href).then(() => {
+            alert('Link copiado para a área de transferência!');
+          }, () => {
+            alert('Não foi possível compartilhar — copie a URL manualmente.');
+          });
+        }
+      });
+
+    });
+
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+</body>
+</html>

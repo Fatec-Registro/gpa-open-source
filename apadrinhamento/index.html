@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apadrinhamento</title>
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/components/header.css">
+    <link rel="stylesheet" href="css/components/hero.css">
+    <link rel="stylesheet" href="css/components/explaining.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+    <link rel="stylesheet" href="css/components/sponsor.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <img alt="Logo do GPA" src="assets/svg/logo_gpa.svg">
+    <nav>
+        <a href="../home/index.html">Home</a>
+        <a href="../adocoes/index.html">Adoções</a>
+        <a href="../apadrinhamento/index.html">Apadrinhamento</a>
+        <a href="../voluntariado/index.html">Voluntariado</a>
+        <a href="../catbiosearch-financeiro/index.html">Financeiro</a>
+        <a href="../informativo_contato/index.html">Informativo</a>
+    </nav>
+</header>
+<section class="hero">
+    <div class="hero-banner">
+        <div class="hero-content">
+            <div class="hero-content-text">
+                <h1 class="titulo-h1">Saiba como seu <span>apoio</span> pode mudar a vida de um animal!</h1>
+                <p class="destaque-h5">Apadrinhar um pet é mais do que um gesto de carinho, é uma chance de transformar realidades. Escolha ser parte dessa mudança!</p>
+            </div>
+            <div class="hero-sponsor-cta">
+                <a href="#sponsor" class="destaque-h5 hero-sponsor-button">Quero apadrinhar!</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="explaining">
+    <div class="explaining-banner">
+        <div class="explaining-content">
+            <div class="explaining-content-text">
+                <h1 class="titulo-h1">Entenda como é <span>apadrinhar!</span></h1>
+                <h4 class="subtitulo-h4">Com uma doação mensal, você garante saúde e carinho aos pets resgatados. Ajude com consultas, tratamentos e muito amor!</h4>
+            </div>
+            <div class="explaining-content-flow">
+                <div class="explaining-details">
+                    <img src="assets/svg/conecte-se.svg" alt="conecte-se">
+                    <div class="explaining-flow-text">
+                        <h4 class="subtitulo-h4">CONECTE-SE</span></h4>
+                        <h5 class="destaque-h5">Conheça a história dos nossos pets.</h5>
+                    </div>
+                </div>
+                <div class="explaining-details">
+                    <img src="assets/svg/apadrinhe.svg" alt="apadrinhe">
+                    <div class="explaining-flow-text">
+                        <h4 class="subtitulo-h4">APADRINHE</span></h4>
+                        <h5 class="destaque-h5">Se algum deles conquistar seu coração, apadrinhe!</h5>
+                    </div>
+                </div>
+                <div class="explaining-details">
+                    <img src="assets/svg/interaja.svg" alt="interaja">
+                    <div class="explaining-flow-text">
+                        <h4 class="subtitulo-h4">INTERAJA</span></h4>
+                        <h5 class="destaque-h5">Acompanhe de longe o dia a dia do seu pet.</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="sponsor" id="sponsor">
+    <div class="sponsor-banner">
+        <h1 class="titulo-h1 sponsor-title">Conheça nossos patudos</h1>
+        <div class="sponsor-content">
+            <div class="filter">
+                <h2 class="titulo-h2 filter-title">Filtros</h2>
+                <div class="filter-subcontainer">
+                    <h4 class="subtitulo-h4 filter-subtitle">Animais</h4>
+                    <ul class="destaque-h5 filter-options">
+                        <li class="filter-animal" data-tipo="dog"><img src="assets/svg/dog_icon.svg" alt="dog_icon">Cachorro</li>
+                        <li class="filter-animal" data-tipo="cat"><img src="assets/svg/cat_icon.svg" alt="cat_icon">Gato</li>
+                    </ul>
+                </div>
+                <div class="filter-subcontainer">
+                    <h4 class="subtitulo-h4 filter-subtitle">Sexo</h4>
+                    <ul class="destaque-h5 filter-options">
+                        <li><label><input type="checkbox" id="filter-female">Fêmea</label></li>
+                        <li><label><input type="checkbox" id="filter-male">Macho</label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pets-content">
+                <div class="pets" id="pets-container"></div>
+                <div class="pagination" id="pagination"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <img src="assets/svg/logo_gpa.svg" alt="Logo do GPA">
+    <p>Ajudar é o primeiro passo para transformar o mundo e começa com um simples gesto.</p>
+    <div class="footer-social-media">
+        <div class="footer-square">
+            <img src="assets/svg/instagram.svg" alt="Logo do Instagram">
+        </div>
+                <div class="footer-square">
+            <img src="assets/svg/twitter.svg" alt="Logo do Twitter">
+        </div>
+                <div class="footer-square">
+            <img src="assets/svg/youtube.svg" alt="Logo do Youtube">
+        </div>
+                <div class="footer-square">
+            <img src="assets/svg/facebook.svg" alt="Logo do Facebook">
+        </div>
+                <div class="footer-square">
+            <img src="assets/svg/linkedln.svg" alt="Logo do Linkedln">
+        </div>
+    </div>
+    <p>&copy; 2025 ONG GPA - Grupo de Proteção Animal</p>
+    <p>Todos os direitos reservados.</p>
+</footer>
+
+<script>
+    const petsData = [
+        { 
+          nome: "Ninja", 
+          img: "assets/svg/pets/ninja.avif", 
+          sexo: "female", 
+          tipo: "dog", 
+          desde: "2015", 
+          custo: "300,00",
+          description: "Ninja é uma cachorrinha amorosa e brincalhona que adora companhia. Foi resgatada de uma situação difícil e agora está pronta para receber todo o carinho que merece.",
+          specialText: "Ninja precisa de ração hipoalergênica e acompanhamento regular com veterinário devido a sensibilidade digestiva.",
+          shelterNote: "Ninja está esperando por um padrinho desde 2015"
+        },
+        { 
+          nome: "Cheetos", 
+          img: "assets/svg/pets/cheetos.avif", 
+          sexo: "female", 
+          tipo: "dog", 
+          desde: "2015", 
+          custo: "300,00",
+          description: "Cheetos é uma pequena princesa cheia de personalidade. Ela adora brincar e fazer amizades. Sua energia é contagiante e traz alegria a todos ao seu redor.",
+          specialText: "Cheetos requer suplementação vitamínica regularmente para manter sua saúde e disposição.",
+          shelterNote: "Cheetos está esperando por um padrinho desde 2015"
+        },
+        { 
+          nome: "Tom", 
+          img: "assets/svg/pets/tom.avif", 
+          sexo: "male", 
+          tipo: "dog", 
+          desde: "2015", 
+          custo: "300,00",
+          description: "Tom é um cachorro dócil e tranquilo que se adapta facilmente a novos ambientes. Ele aprecia passeios calmos e momentos de descanso ao lado de seus companheiros.",
+          specialText: "Tom necessita de medicação contínua para controle de pressão arterial e consultas periódicas.",
+          shelterNote: "Tom está esperando por um padrinho desde 2015"
+        },
+        { 
+          nome: "Romena", 
+          img: "assets/svg/pets/romena.avif", 
+          sexo: "female", 
+          tipo: "dog", 
+          desde: "2015", 
+          custo: "300,00",
+          description: "Romena é uma gatinha delicada e carinhosa. Ela gosta de ambiente calmo e aprecia as demonstrações de carinho de forma suave. Uma companheira perfeita para quem ama gatos.",
+          specialText: "Romena precisa de ração premium para felinos e acompanhamento veterinário regular.",
+          shelterNote: "Romena está esperando por um padrinho desde 2015"
+        },
+        { 
+          nome: "Olivia", 
+          img: "assets/svg/pets/olivia.avif", 
+          sexo: "female", 
+          tipo: "dog", 
+          desde: "2015", 
+          custo: "300,00",
+          description: "Olivia é uma cachorra elegante e bem comportada. Ela tem um temperamento equilibrado e se dá bem com pessoas de todas as idades. Uma verdadeira dama entre os cães.",
+          specialText: "Olivia requer cuidados especiais com a pele e banhos regularizados com xampus específicos.",
+          shelterNote: "Olivia está esperando por um padrinho desde 2015"
+        },
+        { 
+          nome: "Paçoca", 
+          img: "assets/svg/pets/pacoca.avif", 
+          sexo: "female", 
+          tipo: "dog", 
+          desde: "2015", 
+          custo: "300,00",
+          description: "Paçoca é uma gatinha independente mas carinhosa. Ela gosta de explorar seu ambiente e de ótimas sessões de brincadeira. Uma gata cheia de personalidade.",
+          specialText: "Paçoca precisa de suplementação de taurina e acompanhamento oftalmológico anual.",
+          shelterNote: "Paçoca está esperando por um padrinho desde 2015"
+        },
+        { 
+          nome: "Pechincha", 
+          img: "assets/svg/pets/pechincha.avif", 
+          sexo: "male", 
+          tipo: "dog", 
+          desde: "2015", 
+          custo: "300,00",
+          description: "Pechincha é um cachorro alegre e energético que adora brincar. Seu entusiasmo é contagiante e ele traz muita diversão para qualquer lar que o receba.",
+          specialText: "Pechincha necessita de exercício regular e ração balanceada para manter seu peso ideal.",
+          shelterNote: "Pechincha está esperando por um padrinho desde 2015"
+        },
+        { 
+          nome: "Joana", 
+          img: "assets/svg/pets/joana.avif", 
+          sexo: "female", 
+          tipo: "dog", 
+          desde: "2015", 
+          custo: "300,00",
+          description: "Joana é uma gatinha meiga e afetuosa. Ela adora receber carinho e é muito leal com seus donos. Uma companheira perfeita para momentos de tranquilidade.",
+          specialText: "Joana precisa de monitoramento dental e limpeza profissional periódica.",
+          shelterNote: "Joana está esperando por um padrinho desde 2015"
+        },
+        { 
+          nome: "Mário", 
+          img: "assets/svg/pets/mario.avif", 
+          sexo: "male", 
+          tipo: "dog", 
+          desde: "2015", 
+          custo: "300,00",
+          description: "Mário é um cachorro inteligente e obediente. Ele aprende rapidamente novos comandos e é muito responsivo ao treinamento. Uma excelente companhia para famílias.",
+          specialText: "Mário requer estimulação mental através de brinquedos interativos e acompanhamento neurológico.",
+          shelterNote: "Mário está esperando por um padrinho desde 2015"
+        },
+        { 
+          nome: "Robin", 
+          img: "assets/svg/pets/pechincha.avif", 
+          sexo: "male", 
+          tipo: "cat", 
+          desde: "2015", 
+          custo: "300,00",
+          description: "Robin é um gatinho travesso e curioso. Ele gosta de explorar tudo à sua volta e fazer amizades. Um companheiro leal e divertido.",
+          specialText: "Robin precisa de acompanhamento regular com veterinário e vacinação em dia.",
+          shelterNote: "Robin está esperando por um padrinho desde 2015"
+        },
+        { 
+          nome: "Caly", 
+          img: "assets/svg/pets/joana.avif", 
+          sexo: "female", 
+          tipo: "cat", 
+          desde: "2015", 
+          custo: "300,00",
+          description: "Caly é uma gatinha doce e gentil. Ela aprecia ambientes tranquilos e é perfeita para quem busca uma companheira calma.",
+          specialText: "Caly necessita de ração específica para felinos com peso controlado.",
+          shelterNote: "Caly está esperando por um padrinho desde 2015"
+        },
+        { 
+          nome: "Nina", 
+          img: "assets/svg/pets/mario.avif", 
+          sexo: "female", 
+          tipo: "cat", 
+          desde: "2015", 
+          custo: "300,00",
+          description: "Nina é uma gatinha cheia de vida e curiosidade. Ela adora brincar e explorar novos espaços. Uma verdadeira companheira divertida.",
+          specialText: "Nina requer monitoramento regular de saúde e vacinação periódica.",
+          shelterNote: "Nina está esperando por um padrinho desde 2015"
+        }
+    ];    
+    
+    const petsContainer = document.getElementById("pets-container");
+    const paginationContainer = document.getElementById("pagination");
+    const cardsPorLinha = 3;
+    const petsPorPagina = 9;
+
+    let paginaAtual = 1;
+    let petsFiltrados = [...petsData];
+    let tiposAtivos = [];
+    let sexosAtivos = [];
+
+    function renderPets(petsList, pagina = 1) {
+        petsContainer.innerHTML = '';
+        paginaAtual = pagina;
+        
+        const inicio = (pagina - 1) * petsPorPagina;
+        const fim = inicio + petsPorPagina;
+        const petsDaPagina = petsList.slice(inicio, fim);
+
+        for (let i = 0; i < petsDaPagina.length; i += cardsPorLinha) {
+            const linha = document.createElement("div");
+            linha.classList.add("pets-selection");
+
+            petsDaPagina.slice(i, i + cardsPorLinha).forEach(pet => {
+                const card = document.createElement("div");
+                card.classList.add("pet-card");
+
+                const iconSexo = pet.sexo === "male" ? "male.svg" : "female.svg";
+                const classeSexo = pet.sexo === "male" ? "male" : "female";
+
+                card.innerHTML = `
+                    <div class="pet-img">
+                        <img src="${pet.img}" alt="${pet.nome}">
+                    </div>
+                    <div class="pet-details">
+                        <div class="pet-name-container">
+                            <h4 class="subtitulo-h4 pet-name ${classeSexo}">${pet.nome}</h4>
+                            <img src="assets/svg/${iconSexo}" alt="${pet.sexo}">
+                        </div>
+                        <div class="pet-subdetails-container">
+                            <p class="texto-comum">No abrigo desde ${pet.desde}</p>
+                            <p class="texto-custo ${classeSexo}">Custos mensal: R$${pet.custo}</p>
+                        </div>
+                    </div>
+                `;
+
+                card.setAttribute('role', 'button');
+                card.tabIndex = 0;
+                card.style.cursor = 'pointer';
+                card.setAttribute('aria-label', `Ver detalhes do pet ${pet.nome}`);
+
+                const params = new URLSearchParams({
+                    nome: pet.nome,
+                    sexo: pet.sexo,
+                    desde: pet.desde,
+                    custo: pet.custo,
+                    img: pet.img
+                });
+                const destination = `details/index.html?${params.toString()}`;
+
+                card.addEventListener('click', () => {
+                    window.location.href = destination;
+                });
+
+                card.addEventListener('keydown', (evt) => {
+                    if (evt.key === 'Enter' || evt.key === ' ') {
+                        evt.preventDefault();
+                        window.location.href = destination;
+                    }
+                });
+
+                linha.appendChild(card);
+            });
+            petsContainer.appendChild(linha);
+        }
+
+        renderPagination(petsList);
+    }
+
+    function renderPagination(petsList) {
+        paginationContainer.innerHTML = '';
+        const totalPaginas = Math.ceil(petsList.length / petsPorPagina);
+
+        if (totalPaginas <= 1) return;
+
+        if (paginaAtual > 1) {
+            const btnAnterior = document.createElement('button');
+            btnAnterior.className = 'pagination-btn';
+            const imgAnterior = document.createElement('img');
+            imgAnterior.src = 'assets/svg/back.svg';
+            imgAnterior.alt = 'Página anterior';
+            btnAnterior.appendChild(imgAnterior);
+            btnAnterior.addEventListener('click', () => renderPets(petsList, paginaAtual - 1));
+            paginationContainer.appendChild(btnAnterior);
+        }
+
+        for (let i = 1; i <= totalPaginas; i++) {
+            const btnPagina = document.createElement('button');
+            btnPagina.textContent = i;
+            btnPagina.className = `pagination-btn ${i === paginaAtual ? 'active' : ''}`;
+            btnPagina.addEventListener('click', () => renderPets(petsList, i));
+            paginationContainer.appendChild(btnPagina);
+        }
+
+        if (paginaAtual < totalPaginas) {
+            const btnProximo = document.createElement('button');
+            btnProximo.className = 'pagination-btn';
+            const imgProximo = document.createElement('img');
+            imgProximo.src = 'assets/svg/next.svg';
+            imgProximo.alt = 'Próxima página';
+            btnProximo.appendChild(imgProximo);
+            btnProximo.addEventListener('click', () => renderPets(petsList, paginaAtual + 1));
+            paginationContainer.appendChild(btnProximo);
+        }
+    }
+
+    function applyFilters() {
+        petsFiltrados = petsData.filter(pet => {
+            const tipoMatch = tiposAtivos.length === 0 ? true : tiposAtivos.includes(pet.tipo);
+            const sexoMatch = sexosAtivos.length === 0 ? true : sexosAtivos.includes(pet.sexo);
+
+            return tipoMatch && sexoMatch;
+        });
+
+        renderPets(petsFiltrados, 1);
+    }
+
+    renderPets(petsData, 1);
+
+    const filterAnimalElements = document.querySelectorAll('.filter-animal');
+    filterAnimalElements.forEach(element => {
+        element.style.cursor = 'pointer';
+        element.addEventListener('click', () => {
+            const tipo = element.getAttribute('data-tipo');
+            
+            if (tiposAtivos.includes(tipo)) {
+                tiposAtivos = [];
+                element.classList.remove('active');
+            } else {
+                filterAnimalElements.forEach(el => el.classList.remove('active'));
+                tiposAtivos = [tipo];
+                element.classList.add('active');
+            }
+            
+            applyFilters();
+        });
+    });
+
+    const filterFemaleCheckbox = document.getElementById('filter-female');
+    const filterMaleCheckbox = document.getElementById('filter-male');
+
+    filterFemaleCheckbox.addEventListener('change', () => {
+        sexosAtivos = [];
+        if (filterFemaleCheckbox.checked) sexosAtivos.push('female');
+        if (filterMaleCheckbox.checked) sexosAtivos.push('male');
+        applyFilters();
+    });
+
+    filterMaleCheckbox.addEventListener('change', () => {
+        sexosAtivos = [];
+        if (filterFemaleCheckbox.checked) sexosAtivos.push('female');
+        if (filterMaleCheckbox.checked) sexosAtivos.push('male');
+        applyFilters();
+    });
+</script>
+</body>
+</html>
