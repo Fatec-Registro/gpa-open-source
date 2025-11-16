@@ -62,7 +62,7 @@ body {
     background-position: center calc(100% + 70px);
     position: relative;
         /* Rotate the PNG -15deg (contrário) */
-        transform: rotate(-15deg) translateY(70px);
+        transform: rotate(-3deg) translateY(70px);
     margin-right: 0;
     align-self: center;
     pointer-events: none;

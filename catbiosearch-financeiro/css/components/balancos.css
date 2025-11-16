@@ -1,0 +1,247 @@
+/* ========================================
+   PÁGINA DE BALANÇOS PATRIMONIAIS
+   ======================================== */
+
+.balancos-hero {
+    background: linear-gradient(135deg, var(--roxo) 0%, #5a2d7f 100%);
+    color: var(--branco);
+    padding: clamp(3rem, 8vh, 5rem) clamp(2rem, 6vw, 7rem);
+    text-align: center;
+    margin-bottom: clamp(2rem, 5vh, 4rem);
+}
+
+.balancos-hero-content h1 {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    line-height: 1.2;
+}
+
+.balancos-hero-content p {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.95;
+}
+
+/* ========================================
+   CONTAINER PRINCIPAL
+   ======================================== */
+
+.balancos-viewer {
+    background-color: var(--branco);
+    padding: 0;
+}
+
+.balancos-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: clamp(2rem, 4vw, 4rem);
+}
+
+/* ========================================
+   CONTROLES (SELETOR DE ANOS + DOWNLOAD)
+   ======================================== */
+
+.balancos-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: clamp(1rem, 3vw, 2rem);
+    margin-bottom: clamp(2rem, 4vh, 3rem);
+    flex-wrap: wrap;
+}
+
+.year-selector {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.year-btn {
+    padding: 0.6rem 1.2rem;
+    background-color: #f0f0f0;
+    color: #333;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "Jost", sans-serif;
+}
+
+.year-btn:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.year-btn.active {
+    background-color: var(--roxo);
+    color: var(--branco);
+    border-color: var(--roxo);
+    box-shadow: 0 6px 16px rgba(106, 17, 203, 0.3);
+}
+
+/* ========================================
+   BOTÃO DE DOWNLOAD
+   ======================================== */
+
+.download-btn {
+    padding: 0.6rem 1.8rem;
+    background-color: var(--laranja);
+    color: var(--roxo);
+    border: none;
+    border-radius: 8px;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "Jost", sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+}
+
+.download-btn:hover {
+    background-color: #f5a623;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(255, 165, 0, 0.3);
+}
+
+.download-btn:active {
+    transform: translateY(0);
+}
+
+/* ========================================
+   VISUALIZADOR DE PDF
+   ======================================== */
+
+.pdf-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: clamp(600px, 85vh, 900px);
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+#pdfViewer {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ========================================
+   FALLBACK (navegadores sem suporte a PDF)
+   ======================================== */
+
+.pdf-fallback {
+    display: none;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #fef3cd;
+    border: 1px solid #ffc107;
+    border-radius: 8px;
+    color: #856404;
+    text-align: center;
+}
+
+.pdf-fallback p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.pdf-fallback a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.pdf-fallback a:hover {
+    text-decoration: underline;
+}
+
+/* ========================================
+   RESPONSIVIDADE
+   ======================================== */
+
+@media (max-width: 768px) {
+    .balancos-controls {
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .year-selector {
+        justify-content: center;
+        order: 2;
+    }
+
+    .download-btn {
+        order: 1;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .balancos-container {
+        padding: clamp(1.5rem, 3vw, 2.5rem);
+    }
+
+    .pdf-container {
+        height: clamp(500px, 70vh, 700px);
+    }
+}
+
+@media (max-width: 480px) {
+    .balancos-hero {
+        padding: 2rem 1rem;
+    }
+
+    .balancos-hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .balancos-hero-content p {
+        font-size: 0.95rem;
+    }
+
+    .year-btn {
+        padding: 0.5rem 0.9rem;
+        font-size: 0.85rem;
+    }
+
+    .year-selector {
+        gap: 0.35rem;
+    }
+
+    .pdf-container {
+        height: clamp(400px, 60vh, 600px);
+    }
+}
+
+/* ========================================
+   IMPRESSÃO (print-friendly)
+   ======================================== */
+
+@media print {
+    .balancos-hero,
+    .balancos-controls,
+    .download-btn,
+    .site-header,
+    .site-footer {
+        display: none !important;
+    }
+
+    .pdf-container {
+        height: auto;
+        border: none;
+        box-shadow: none;
+    }
+}
