@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apadrinhamento</title>
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/components/header.css">
+    <link rel="stylesheet" href="css/components/hero.css">
+    <link rel="stylesheet" href="css/components/explaining.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+    <link rel="stylesheet" href="css/components/sponsor.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <img alt="Logo do GPA" src="assets/svg/logo_gpa.svg">
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../adocoes/index.html">Adoções</a>
+        <a href="../apadrinhamento/index.html">Apadrinhamento</a>
+        <a href="../voluntariado/index.html">Voluntariado</a>
+        <a href="../catbiosearch-financeiro/index.html">Financeiro</a>
+        <a href="../informativo_contato/index.html">Informativo</a>
+    </nav>
+</header>
+<section class="hero">
+    <div class="hero-banner">
+        <div class="hero-content">
+            <div class="hero-content-text">
+                <h1 class="titulo-h1">Saiba como seu <span>apoio</span> pode mudar a vida de um animal!</h1>
+                <p class="destaque-h5">Apadrinhar um pet é mais do que um gesto de carinho, é uma chance de transformar realidades. Escolha ser parte dessa mudança!</p>
+            </div>
+            <div class="hero-sponsor-cta">
+                <a href="#sponsor" class="destaque-h5 hero-sponsor-button">Quero apadrinhar!</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="explaining">
+    <div class="explaining-banner">
+        <div class="explaining-content">
+            <div class="explaining-content-text">
+                <h1 class="titulo-h1">Entenda como é <span>apadrinhar!</span></h1>
+                <h4 class="subtitulo-h4">Com uma doação mensal, você garante saúde e carinho aos pets resgatados. Ajude com consultas, tratamentos e muito amor!</h4>
+            </div>
+            <div class="explaining-content-flow">
+                <div class="explaining-details">
+                    <img src="assets/svg/conecte-se.svg" alt="conecte-se">
+                    <div class="explaining-flow-text">
+                        <h4 class="subtitulo-h4">CONECTE-SE</span></h4>
+                        <h5 class="destaque-h5">Conheça a história dos nossos pets.</h5>
+                    </div>
+                </div>
+                <!-- <img src="assets/svg/arrow.svg" alt="arrow"> -->
+                <div class="explaining-details">
+                    <img src="assets/svg/apadrinhe.svg" alt="apadrinhe">
+                    <div class="explaining-flow-text">
+                        <h4 class="subtitulo-h4">APADRINHE</span></h4>
+                        <h5 class="destaque-h5">Se algum deles conquistar seu coração, apadrinhe!</h5>
+                    </div>
+                </div>
+                <!-- <img src="assets/svg/arrow.svg" alt="arrow"> -->
+                <div class="explaining-details">
+                    <img src="assets/svg/interaja.svg" alt="interaja">
+                    <div class="explaining-flow-text">
+                        <h4 class="subtitulo-h4">INTERAJA</span></h4>
+                        <h5 class="destaque-h5">Acompanhe de longe o dia a dia do seu pet.</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="sponsor" id="sponsor">
+    <div class="sponsor-banner">
+        <h1 class="titulo-h1 sponsor-title">Conheça nossos patudos</h1>
+        <div class="sponsor-content">
+            <div class="filter">
+                <h2 class="titulo-h2 filter-title">Filtros</h2>
+                <div class="filter-subcontainer">
+                    <h4 class="subtitulo-h4 filter-subtitle">Animais</h4>
+                    <ul class="destaque-h5 filter-options">
+                        <li><img src="assets/svg/dog_icon.svg" alt="dog_icon">Cachorro</li>
+                        <li><img src="assets/svg/cat_icon.svg" alt="cat_icon">Gato</li>
+                    </ul>
+                </div>
+                <div class="filter-subcontainer">
+                    <h4 class="subtitulo-h4 filter-subtitle">Sexo</h4>
+                    <ul class="destaque-h5 filter-options">
+                        <li><label><input type="checkbox">Fêmea</label></li>
+                        <li><label><input type="checkbox">Macho</label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pets-content">
+                <div class="pets" id="pets-container"></div>
+                <div class="pagination" id="pagination"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <img src="assets/svg/logo_gpa.svg" alt="Logo do GPA">
+    <p>Ajudar é o primeiro passo para transformar o mundo e começa com um simples gesto.</p>
+    <div class="footer-social-media">
+        <div class="footer-square">
+            <img src="assets/svg/instagram.svg" alt="Logo do Instagram">
+        </div>
+                <div class="footer-square">
+            <img src="assets/svg/twitter.svg" alt="Logo do Twitter">
+        </div>
+                <div class="footer-square">
+            <img src="assets/svg/youtube.svg" alt="Logo do Youtube">
+        </div>
+                <div class="footer-square">
+            <img src="assets/svg/facebook.svg" alt="Logo do Facebook">
+        </div>
+                <div class="footer-square">
+            <img src="assets/svg/linkedln.svg" alt="Logo do Linkedln">
+        </div>
+    </div>
+    <p>&copy; 2025 ONG GPA - Grupo de Proteção Animal</p>
+    <p>Todos os direitos reservados.</p>
+</footer>
+
+<script>
+    const petsData = [
+        { nome: "Ninja", img: "assets/svg/pets/ninja.avif", sexo: "female", desde: "2015", custo: "300,00" },
+        { nome: "Cheetos", img: "assets/svg/pets/cheetos.avif", sexo: "female", desde: "2015", custo: "300,00" },
+        { nome: "Tom", img: "assets/svg/pets/tom.avif", sexo: "male", desde: "2015", custo: "300,00" },
+        { nome: "Romena", img: "assets/svg/pets/romena.avif", sexo: "female", desde: "2015", custo: "300,00" },
+        { nome: "Olivia", img: "assets/svg/pets/olivia.avif", sexo: "female", desde: "2015", custo: "300,00" },
+        { nome: "Paçoca", img: "assets/svg/pets/pacoca.avif", sexo: "female", desde: "2015", custo: "300,00" },
+        { nome: "Pechincha", img: "assets/svg/pets/pechincha.avif", sexo: "male", desde: "2015", custo: "300,00" },
+        { nome: "Joana", img: "assets/svg/pets/joana.avif", sexo: "female", desde: "2015", custo: "300,00" },
+        { nome: "Mário", img: "assets/svg/pets/mario.avif", sexo: "male", desde: "2015", custo: "300,00" }
+    ];
+
+    const petsContainer = document.getElementById("pets-container");
+    const cardsPorLinha = 3;
+
+    for (let i = 0; i < petsData.length; i += cardsPorLinha) {
+        const linha = document.createElement("div");
+        linha.classList.add("pets-selection");
+
+        petsData.slice(i, i + cardsPorLinha).forEach(pet => {
+            const card = document.createElement("div");
+            card.classList.add("pet-card");
+
+            const iconSexo = pet.sexo === "male" ? "male.svg" : "female.svg";
+            const classeSexo = pet.sexo === "male" ? "male" : "female";
+
+            card.innerHTML = `
+                <div class="pet-img">
+                    <img src="${pet.img}" alt="${pet.nome}">
+                </div>
+                <div class="pet-details">
+                    <div class="pet-name-container">
+                        <h4 class="subtitulo-h4 pet-name ${classeSexo}">${pet.nome}</h4>
+                        <img src="assets/svg/${iconSexo}" alt="${pet.sexo}">
+                    </div>
+                    <div class="pet-subdetails-container">
+                        <p class="texto-comum">No abrigo desde ${pet.desde}</p>
+                        <p class="texto-custo ${classeSexo}">Custos mensal: R$${pet.custo}</p>
+                    </div>
+                </div>
+            `;
+
+            linha.appendChild(card);
+        });
+        petsContainer.appendChild(linha);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+@import url("../variables.css");
+@import url("../globals.css");
+
+.explaining-banner {
+  background-color: #eee7f6;
+  width: 100%;
+  padding: 96px 10vw;
+  box-sizing: border-box;
+}
+
+.explaining-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 90px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.explaining-content-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 16px;
+}
+
+.explaining-content-flow {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+  gap: clamp(20px, 6vw, 61px);
+}
+
+.explaining-details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 33px;
+}
+
+.explaining-flow-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 13px;
+  width: 17.93rem;
+}
+
+.explaining-content-text h1 {
+  color: var(--roxo);
+}
+
+.explaining-content-text h4 {
+  color: var(--cinza);
+}
+
+.explaining-content span {
+  color: var(--laranja);
+}
+
+.explaining-details img {
+  width: 8.43rem;
+}
+
+.explaining-flow-text h4 {
+  color: var(--roxo);
+}
+
+.explaining-flow-text h5 {
+  color: var(--cinza);
+}

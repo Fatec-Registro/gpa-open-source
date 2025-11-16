@@ -77,3 +77,18 @@ Todo o trabalho deve seguir o fluxo colaborativo no GitHub para garantir a coer�
 * **Link da Página Hospedada (Deploy):** `[INSERIR O LINK DO DEPLOY AQUI]`
 * **Melhorias Visuais (UI/UX):** Adicionada uma identidade visual para as telas, além disso seguimos com um padrão de indústria mais simples como o espaçamento em branco, hierarquia e outros processos.
 * **Novas Funcionalidades Implementadas:** No que diz ao requisito de contribuição, foi criada um branch nomeada de feat/voluntariado onde foram adicionadas as mudanças da página do voluntariado encontrados na página [Voluntariado](https://www.figma.com/design/2f17t857v3Ee1hFHABxAb5/GPA?node-id=0-1&p=f&t=XKxxnC7eXMzj8s5L-0).
+
+### Equipe: AntraVision
+
+| Integrante | Função no Projeto | Nickname  |
+| :--- | :--- | :--- |
+| **Ana Luisa Lima** | Desenvolvedora Frontend | [analu-lima] |
+| **Gabriel Henrique Rodrigues Salles** | Designer/UX & Desenvolvedor Frontend | [GabrielRodriguez153] |
+| **Letícia Sayuri Imasato** | Designer/UX & Desenvolvedora Frontend | [lesyimasato] |
+| **Nicolle Vitalino Fujii** | Desenvolvedora Frontend | [vFujii] |
+
+#### Descrição da Página de Apadrinhamento 🐾
+
+* **Link da Página Hospedada (Deploy):** `[INSERIR O LINK DO DEPLOY AQUI]`
+* **Melhorias Visuais (UI/UX):** A página de apadrinhamento foi redesenhada de acordo com o manual de marca, trazendo um visual mais limpo e direto. O novo layout ajuda o usuário a entender facilmente como funciona o processo de apadrinhamento e apresenta os pets de forma mais clara, organizada e interativa, tornando a experiência mais agradável.
+* **Novas Funcionalidades Implementadas:** Algumas das novas funcionalidades incluem a opção de filtro, permitindo ao usuário selecionar os pets por espécie ou sexo. Também foi incluída uma seção explicativa sobre o fluxo de funcionamento do apadrinhamento. As funcionalidades foram desenvolvidas na branch feat/apadrinhamento. [Apadrinhamento](https://www.figma.com/design/2f17t857v3Ee1hFHABxAb5/GPA?node-id=2-9&t=lFN6ly1OI9LhSbHU-1)
