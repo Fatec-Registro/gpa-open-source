@@ -10,14 +10,14 @@ Nosso principal objetivo é modernizar o website utilizando as tecnologias e met
 
 ## 👥 Responsabilidades por Página
 
-| Página | Equipe Responsável | Status do Deploy | Link de Hospedagem (Deploy) |
-| :--- | :--- | :--- | :--- |
-| **Home** | **Aquasense** | EM DESENVOLVIMENTO | [Link Aqui] |
-| **Adoção & Doações** | **Banap** | EM DESENVOLVIMENTO | [Link Aqui] |
-| **Apadrinhamento** | Antravision | EM DESENVOLVIMENTO | [Link Aqui] |
-| **Voluntariado** | Tagarela | EM DESENVOLVIMENTO | [Link Aqui] |
-| **Informativo e Contato** | Cattus | FINALIZADO | [Informativo e Contato](https://gpa-informativo-e-contato.vercel.app/) |
-| **Financeiro** | CatBioSearch | FINALIZADO | [Financeiro](https://gpafinanceiro.vercel.app) |
+| Página                    | Equipe Responsável | Status do Deploy   | Link de Hospedagem (Deploy)                                            |
+| :------------------------ | :----------------- | :----------------- | :--------------------------------------------------------------------- |
+| **Home**                  | **Aquasense**      | EM DESENVOLVIMENTO | [Home](https://gpa-open-source.vercel.app/home/index.html)             |
+| **Adoção & Doações**      | **Banap**          | EM DESENVOLVIMENTO | [Doações](https://gpa-open-source-delta.vercel.app/apadrinhamento/index.html)
+| **Apadrinhamento**        | Antravision        | FINALIZADO | [Apadrinhamento](https://gpa-open-source-delta.vercel.app/apadrinhamento/index.html)
+| **Voluntariado**          | Tagarela           | FINALIZADO | [Voluntariado](https://gpa-open-source-delta.vercel.app/voluntariado/index.html)                  
+| **Informativo e Contato** | Cattus             | FINALIZADO         | [Informativo e Contato](https://gpa-informativo-e-contato.vercel.app/) |
+| **Financeiro**            | CatBioSearch       | FINALIZADO         | [Financeiro](https://gpafinanceiro.vercel.app)                         |
 
 ---
 
@@ -41,6 +41,6 @@ Nosso principal objetivo é modernizar o website utilizando as tecnologias e met
 
 #### Descrição da Página de Apadrinhamento 🐾
 
-* **Link da Página Hospedada (Deploy):** `[INSERIR O LINK DO DEPLOY AQUI]`
+* **Link da Página Hospedada (Deploy):** [Link do Deploy](https://gpa-open-source-delta.vercel.app/apadrinhamento/index.html)
 * **Melhorias Visuais (UI/UX):** A página de apadrinhamento foi redesenhada de acordo com o manual de marca, trazendo um visual mais limpo e direto. O novo layout ajuda o usuário a entender facilmente como funciona o processo de apadrinhamento e apresenta os pets de forma mais clara, organizada e interativa, tornando a experiência mais agradável.
 * **Novas Funcionalidades Implementadas:** Algumas das novas funcionalidades incluem a opção de filtro, permitindo ao usuário selecionar os pets por espécie ou sexo. Também foi incluída uma seção explicativa sobre o fluxo de funcionamento do apadrinhamento. As funcionalidades foram desenvolvidas na branch feat/apadrinhamento. [Apadrinhamento](https://www.figma.com/design/2f17t857v3Ee1hFHABxAb5/GPA?node-id=2-9&t=lFN6ly1OI9LhSbHU-1)

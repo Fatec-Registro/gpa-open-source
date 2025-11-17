@@ -13,9 +13,9 @@ Nosso principal objetivo é modernizar o website utilizando as tecnologias e met
 | Página                    | Equipe Responsável | Status do Deploy   | Link de Hospedagem (Deploy)                                            |
 | :------------------------ | :----------------- | :----------------- | :--------------------------------------------------------------------- |
 | **Home**                  | **Aquasense**      | EM DESENVOLVIMENTO | [Home](https://gpa-open-source.vercel.app/home/index.html)             |
-| **Adoção & Doações**      | **Banap**          | EM DESENVOLVIMENTO | [Link Aqui]                                                            |
-| **Apadrinhamento**        | Antravision        | EM DESENVOLVIMENTO | [Link Aqui]                                                            |
-| **Voluntariado**          | Tagarela           | EM DESENVOLVIMENTO | [Link Aqui]                                                            |
+| **Adoção & Doações**      | **Banap**          | EM DESENVOLVIMENTO | [Doações](https://gpa-open-source-delta.vercel.app/apadrinhamento/index.html)
+| **Apadrinhamento**        | Antravision        | FINALIZADO | [Apadrinhamento](https://gpa-open-source-delta.vercel.app/apadrinhamento/index.html)
+| **Voluntariado**          | Tagarela           | FINALIZADO | [Voluntariado](https://gpa-open-source-delta.vercel.app/voluntariado/index.html)                  
 | **Informativo e Contato** | Cattus             | FINALIZADO         | [Informativo e Contato](https://gpa-informativo-e-contato.vercel.app/) |
 | **Financeiro**            | CatBioSearch       | FINALIZADO         | [Financeiro](https://gpafinanceiro.vercel.app)                         |
 
