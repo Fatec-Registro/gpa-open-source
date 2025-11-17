@@ -6,10 +6,10 @@
 
 | Integrante                         | Função no Projeto        | Nickname / GitHub ID |
 |------------------------------------|---------------------------|------------------------|
-| Lauro Liberato Neto                | Desenvolvedor Frontend    | [GitHub ID]           |
-| Henrique Duquinha Soares           | Desenvolvedor Frontend    | [GitHub ID]           |
-| Matheus da Silva Moura             | Desenvolvedor Frontend    | [GitHub ID]           |
-| Henry Almeida Fernandes Magalhães  | Designer/UX               | [GitHub ID]           |
+| Lauro Liberato Neto                | Desenvolvedor Frontend    | [LauroLn]           |
+| Henrique Duquinha Soares           | Desenvolvedor Frontend    | [hduquinha]           |
+| Matheus da Silva Moura             | Desenvolvedor Frontend    | [mateus-withh]           |
+| Henry Almeida Fernandes Magalhães  | Designer/UX               | [Henry-AF]           |
 
 
 ---
