@@ -53,3 +53,17 @@
 .hero-sponsor-button:hover {
   transform: translateY(-5px);
 }
+
+.hero-banner {
+    position: relative; 
+}
+
+.hero-paw {
+    position: absolute;
+    width: 90px;
+    top: 30px;
+    left: 30px;
+    opacity: 0.9;
+    pointer-events: none; 
+    user-select: none;
+}
