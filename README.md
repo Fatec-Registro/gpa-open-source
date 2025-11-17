@@ -12,7 +12,7 @@ Nosso principal objetivo é modernizar o website utilizando as tecnologias e met
 
 | Página | Equipe Responsável | Status do Deploy | Link de Hospedagem (Deploy) |
 | :--- | :--- | :--- | :--- |
-| **Home** | **Aquasense** | EM DESENVOLVIMENTO | [Link Aqui] |
+| **Home** | **Aquasense** | EM DESENVOLVIMENTO | [Home](https://gpa-open-source.vercel.app/home/index.html) |
 | **Adoção & Doações** | **Banap** | EM DESENVOLVIMENTO | [Link Aqui] |
 | **Apadrinhamento** | Antravision | EM DESENVOLVIMENTO | [Link Aqui] |
 | **Voluntariado** | Tagarela | EM DESENVOLVIMENTO | [Link Aqui] |
