@@ -102,10 +102,8 @@
           <div class="donation-section__col donation-section__col--right">
             <h3 class="donation-section__plan">PLANO AMIGO<br />DA PATA</h3>
             <div class="donation-section__circle-wrapper">
-  <img
-    class="donation-section__circle"
-  />
-</div>
+              <img class="donation-section__circle" />
+            </div>
 
             <p class="donation-section__small">
               Contribuição simbólica, para quem quer começar ajudando um
@@ -173,117 +171,117 @@
     <div id="footer-placeholder"></div>
 
     <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    fetch("header.html")
-      .then((response) => {
-        if (!response.ok)
-          throw new Error(`Erro ao carregar header: ${response.status}`);
-        return response.text();
-      })
-      .then((data) => {
-        document.getElementById("header-placeholder").innerHTML = data;
-      })
-      .catch((error) => console.error("Erro ao inserir header:", error));
+      document.addEventListener("DOMContentLoaded", () => {
+        fetch("header.html")
+          .then((response) => {
+            if (!response.ok)
+              throw new Error(`Erro ao carregar header: ${response.status}`);
+            return response.text();
+          })
+          .then((data) => {
+            document.getElementById("header-placeholder").innerHTML = data;
+          })
+          .catch((error) => console.error("Erro ao inserir header:", error));
 
-    fetch("footer.html")
-      .then((response) => {
-        if (!response.ok)
-          throw new Error(`Erro ao carregar footer: ${response.status}`);
-        return response.text();
-      })
-      .then((data) => {
-        document.getElementById("footer-placeholder").innerHTML = data;
-      })
-      .catch((error) => console.error("Erro ao inserir footer:", error));
+        fetch("footer.html")
+          .then((response) => {
+            if (!response.ok)
+              throw new Error(`Erro ao carregar footer: ${response.status}`);
+            return response.text();
+          })
+          .then((data) => {
+            document.getElementById("footer-placeholder").innerHTML = data;
+          })
+          .catch((error) => console.error("Erro ao inserir footer:", error));
 
-    // === DOTS + TROCAR PLANO ===
-  (function initDonationDots() {
-  const dots = Array.from(
-    document.querySelectorAll(".donation-section__dot")
-  );
-  if (!dots.length) return;
+        // === DOTS + TROCAR PLANO ===
+        (function initDonationDots() {
+          const dots = Array.from(
+            document.querySelectorAll(".donation-section__dot")
+          );
+          if (!dots.length) return;
 
-  // Elementos que serão atualizados
-  const titleEl = document.querySelector(".donation-section__plan");
-  const imgEl = document.querySelector(".donation-section__circle");
-  const smallEl = document.querySelector(".donation-section__small");
-  const quoteEl = document.querySelector(".donation-section__quote");
+          // Elementos que serão atualizados
+          const titleEl = document.querySelector(".donation-section__plan");
+          const imgEl = document.querySelector(".donation-section__circle");
+          const smallEl = document.querySelector(".donation-section__small");
+          const quoteEl = document.querySelector(".donation-section__quote");
 
-  if (!titleEl || !imgEl || !smallEl || !quoteEl) return;
+          if (!titleEl || !imgEl || !smallEl || !quoteEl) return;
 
-  // Planos (como você já tinha)
-  const plans = [
-    {
-      title: "PLANO AMIGO<br />DA PATA",
-      img: "assets/svg/paw-print.svg",
-      imgAlt: "Desenho de pata de animal",
-      small:
-        "Contribuição simbólica, para quem quer começar ajudando um pouquinho todo mês.",
-      quote: "“Um pequeno gesto que faz um<br />rabinho balançar de alegria!”",
-    },
-    {
-      title: "PLANO CORAÇÃO PELUDO",
-      img: "assets/svg/dog.svg",
-      imgAlt: "Desenho de um cachorro em um lar protegido",
-      small:
-        "Contribuição intermediária, ideal para quem deseja apoiar de forma mais constante.",
-      quote:
-        "“Seu carinho vira cuidado, abrigo e alimento para quem mais precisa.”",
-    },
-    {
-      title: "PLANO ANJINHO DE PATAS",
-      img: "assets/svg/cat.svg",
-      imgAlt: "Desenho de um guardião de animais",
-      small:
-        "Contribuição maior, para quem quer abraçar a causa com força total.",
-      quote:
-        "“Um amor que transforma vidas e espalha esperança a cada mês.”",
-    },
-  ];
+          // Planos (como você já tinha)
+          const plans = [
+            {
+              title: "PLANO AMIGO<br />DA PATA",
+              img: "assets/svg/paw-print.svg",
+              imgAlt: "Desenho de pata de animal",
+              small:
+                "Contribuição simbólica, para quem quer começar ajudando um pouquinho todo mês.",
+              quote:
+                "“Um pequeno gesto que faz um<br />rabinho balançar de alegria!”",
+            },
+            {
+              title: "PLANO<br />CORAÇÃO PELUDO",
+              img: "assets/svg/dog.svg",
+              imgAlt: "Desenho de um cachorro em um lar protegido",
+              small:
+                "Contribuição intermediária, ideal para quem deseja apoiar de forma mais constante.",
+              quote:
+                "“Seu carinho vira cuidado, abrigo e alimento para quem mais precisa.”",
+            },
+            {
+              title: "PLANO ANJINHO<br />DE PATAS",
+              img: "assets/svg/cat.svg",
+              imgAlt: "Desenho de um guardião de animais",
+              small:
+                "Contribuição maior, para quem quer abraçar a causa com força total.",
+              quote:
+                "“Um amor que transforma vidas e espalha esperança a cada mês.”",
+            },
+          ];
 
-  let currentIndex = 0;
+          let currentIndex = 0;
 
-  const setActivePlan = (index) => {
-    const plan = plans[index];
-    if (!plan) return;
+          const setActivePlan = (index) => {
+            const plan = plans[index];
+            if (!plan) return;
 
-    currentIndex = index; // guarda o índice atual
+            currentIndex = index; // guarda o índice atual
 
-    // Atualiza conteúdo
-    titleEl.innerHTML = plan.title;
-    imgEl.src = plan.img;
-    imgEl.alt = plan.imgAlt;
-    smallEl.textContent = plan.small;
-    quoteEl.innerHTML = plan.quote;
+            // Atualiza conteúdo
+            titleEl.innerHTML = plan.title;
+            imgEl.src = plan.img;
+            imgEl.alt = plan.imgAlt;
+            smallEl.textContent = plan.small;
+            quoteEl.innerHTML = plan.quote;
 
-    // Atualiza dot ativo
-    dots.forEach((dot, i) => {
-      dot.classList.toggle(
-        "donation-section__dot--active",
-        i === index
-      );
-    });
-  };
+            // Atualiza dot ativo
+            dots.forEach((dot, i) => {
+              dot.classList.toggle(
+                "donation-section__dot--active",
+                i === index
+              );
+            });
+          };
 
-  // Clique em cada dot
-  dots.forEach((dot, index) => {
-    dot.addEventListener("click", () => {
-      setActivePlan(index);
-    });
-  });
+          // Clique em cada dot
+          dots.forEach((dot, index) => {
+            dot.addEventListener("click", () => {
+              setActivePlan(index);
+            });
+          });
 
-  // Estado inicial
-  setActivePlan(0);
+          // Estado inicial
+          setActivePlan(0);
 
-  // Troca automática a cada 3 segundos
-  const INTERVAL_MS = 5000;
-  setInterval(() => {
-    const nextIndex = (currentIndex + 1) % plans.length;
-    setActivePlan(nextIndex);
-  }, INTERVAL_MS);
-})();
-  });
-</script>
-
+          // Troca automática a cada 3 segundos
+          const INTERVAL_MS = 5000;
+          setInterval(() => {
+            const nextIndex = (currentIndex + 1) % plans.length;
+            setActivePlan(nextIndex);
+          }, INTERVAL_MS);
+        })();
+      });
+    </script>
   </body>
 </html>
