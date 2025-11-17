@@ -19,7 +19,7 @@
 **Página:** Financeiro
 
 **Link da Página Hospedada (Deploy):**  
-[gpafinanceiro.vercel.app]
+[Financeiro](https://gpa-open-source-delta.vercel.app/catbiosearch-financeiro/index.html)
 
 ---
 
