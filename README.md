@@ -56,7 +56,7 @@ Todo o trabalho deve seguir o fluxo colaborativo no GitHub para garantir a coer�
 | **[Nome Completo do Aluno 3]** | Desenvolvedor Backend  | [GitHub ID] |
 | ...                            | ...                    | ...         |
 
-#### Descrição da Página **Home**
+#### Descrição da Página
 
 - **Link da Página Hospedada (Deploy):** [Clique aqui](https://gpa-open-source.vercel.app/home/index.html)
 
@@ -66,6 +66,6 @@ Todo o trabalho deve seguir o fluxo colaborativo no GitHub para garantir a coer�
   - Comportamento responsivo aprimorado para telas menores.
 
 - **Novas Funcionalidades Implementadas:**
-  - Direcionamento funcional entre as rotas principais da aplicação. (Header)
+  - Direcionamento funcional entre as rotas principais da aplicação.
   - Implementação dos objetos e componentes responsáveis por carregar e exibir o conteúdo da página.
-  - Estrutura de navegação organizada para garantir fluxo consistente entre as telas. (Header)
+  - Estrutura de navegação organizada para garantir fluxo consistente entre as telas.
