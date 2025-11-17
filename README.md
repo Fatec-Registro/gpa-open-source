@@ -12,8 +12,8 @@ Nosso principal objetivo é modernizar o website utilizando as tecnologias e met
 
 | Página                    | Equipe Responsável | Status do Deploy   | Link de Hospedagem (Deploy)                                            |
 | :------------------------ | :----------------- | :----------------- | :--------------------------------------------------------------------- |
-| **Home**                  | **Aquasense**      | EM DESENVOLVIMENTO | [Home](https://gpa-open-source.vercel.app/home/index.html)             |
-| **Adoção & Doações**      | **Banap**          | EM DESENVOLVIMENTO | [Doações](https://gpa-open-source-delta.vercel.app/apadrinhamento/index.html)
+| **Home**                  | **Aquasense**      | FINALIZADO | [Home](https://gpa-open-source.vercel.app/home/index.html)             |
+| **Adoção & Doações**      | **Banap**          | EM ANDAMENTO | [Doações](https://gpa-open-source-delta.vercel.app/apadrinhamento/index.html)
 | **Apadrinhamento**        | Antravision        | FINALIZADO | [Apadrinhamento](https://gpa-open-source-delta.vercel.app/apadrinhamento/index.html)
 | **Voluntariado**          | Tagarela           | FINALIZADO | [Voluntariado](https://gpa-open-source-delta.vercel.app/voluntariado/index.html)                  
 | **Informativo e Contato** | Cattus             | FINALIZADO         | [Informativo e Contato](https://gpa-informativo-e-contato.vercel.app/) |
@@ -56,8 +56,16 @@ Todo o trabalho deve seguir o fluxo colaborativo no GitHub para garantir a coer�
 | **[Nome Completo do Aluno 3]** | Desenvolvedor Backend  | [GitHub ID] |
 | ...                            | ...                    | ...         |
 
-#### Descrição da Página **[Nome da Página - Ex: Home]**
+#### Descrição da Página **Home**
 
-- **Link da Página Hospedada (Deploy):** `[INSERIR O LINK DO DEPLOY AQUI]`
-- **Melhorias Visuais (UI/UX):** [Descreva brevemente as mudanças de design e usabilidade]
-- **Novas Funcionalidades Implementadas:** [Descreva as novas funcionalidades que atendem ao Requisito 4.]
+- **Link da Página Hospedada (Deploy):** [Clique aqui](https://gpa-open-source.vercel.app/home/index.html)
+
+- **Melhorias Visuais (UI/UX):**
+  - Ajustes de espaçamento e alinhamento para melhorar a legibilidade.
+  - Elementos reorganizados para facilitar navegação e foco do usuário.
+  - Comportamento responsivo aprimorado para telas menores.
+
+- **Novas Funcionalidades Implementadas:**
+  - Direcionamento funcional entre as rotas principais da aplicação. (Header)
+  - Implementação dos objetos e componentes responsáveis por carregar e exibir o conteúdo da página.
+  - Estrutura de navegação organizada para garantir fluxo consistente entre as telas. (Header)
