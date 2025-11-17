@@ -1,0 +1,57 @@
+@import url('../variables.css');
+
+.site-header {
+    background-color: var(--roxo);
+    width: 100%;
+}
+
+.header-content {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 28px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: clamp(2rem, 6vw, 5rem);
+}
+
+.header-logo {
+    height: 64px;
+    flex-shrink: 0;
+}
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    gap: clamp(1.5rem, 4vw, 3rem);
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav a {
+    color: var(--branco);
+    text-decoration: none;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: 0.02em;
+    transition: color 0.2s ease;
+}
+
+.header-nav a:hover,
+.header-nav a:focus-visible {
+    color: var(--laranja);
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 1.25rem;
+        text-align: center;
+    }
+
+    .header-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

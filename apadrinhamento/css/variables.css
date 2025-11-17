@@ -1,0 +1,16 @@
+:root {
+  --branco: #ffffff;
+  --roxo: #500e9c;
+  --laranja: #fe9103;
+  --cinza: #2c2c2c;
+  --titulo-h1-size: 3em;
+  --tituto-h1-weight: 700;
+  --titulo-h2-size: 2.25em;
+  --tituto-h2-weight: 700;
+  --subtitulo-h4-size: 1.75em;
+  --subtitulo-h4-weight: 600;
+  --destaque-h5-size: 1.25em;
+  --destaque-h5-weight: 500;
+  --texto-comum-size: 1.125em;
+  --texto-comum-weight: 400;
+}

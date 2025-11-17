@@ -1,0 +1,42 @@
+@import url('variables.css');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.titulo-h1{
+    font-size: var(--titulo-h1-size);
+    font-weight: var(--tituto-h1-weight);
+}
+
+.titulo-h2{
+    font-size: var(--titulo-h2-size);
+    font-weight: var(--tituto-h2-weight);
+}
+
+.subtitulo-h4 {
+    font-size: var(--subtitulo-h4-size);
+    font-weight: var(--subtitulo-h4-weight);
+}
+
+.destaque-h5 {
+    font-size: var(--destaque-h5-size);
+    font-weight: var(--destaque-h5-weight);
+}
+
+.textp-comum {
+    font-size: var(--texto-comum-size);
+    font-weight: var(--texto-comum-weight);
+    color: var(--cinza);
+}

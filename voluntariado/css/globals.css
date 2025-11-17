@@ -1,0 +1,27 @@
+@import url('variables.css');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.titulo-h1{
+    font-size: var(--titulo-h1-size);
+    font-weight: var(--tituto-h1-weight);
+    color: var(--roxo);
+}
+
+.subtitulo-h4 {
+    font-family: "Jost", sans-serif;
+    font-size: var(--subtitulo-h4-size);
+    font-weight: var(--subtitulo-h4-weight);
+}
