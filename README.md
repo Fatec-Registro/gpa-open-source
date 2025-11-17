@@ -56,16 +56,8 @@ Todo o trabalho deve seguir o fluxo colaborativo no GitHub para garantir a coer�
 | **[Nome Completo do Aluno 3]** | Desenvolvedor Backend  | [GitHub ID] |
 | ...                            | ...                    | ...         |
 
-#### Descrição da Página
+#### Descrição da Página **[Nome da Página - Ex: Home]**
 
-- **Link da Página Hospedada (Deploy):** [Clique aqui](https://gpa-open-source.vercel.app/home/index.html)
-
-- **Melhorias Visuais (UI/UX):**
-  - Ajustes de espaçamento e alinhamento para melhorar a legibilidade.
-  - Elementos reorganizados para facilitar navegação e foco do usuário.
-  - Comportamento responsivo aprimorado para telas menores.
-
-- **Novas Funcionalidades Implementadas:**
-  - Direcionamento funcional entre as rotas principais da aplicação.
-  - Implementação dos objetos e componentes responsáveis por carregar e exibir o conteúdo da página.
-  - Estrutura de navegação organizada para garantir fluxo consistente entre as telas.
+- **Link da Página Hospedada (Deploy):** `[INSERIR O LINK DO DEPLOY AQUI]`
+- **Melhorias Visuais (UI/UX):** [Descreva brevemente as mudanças de design e usabilidade]
+- **Novas Funcionalidades Implementadas:** [Descreva as novas funcionalidades que atendem ao Requisito 4.]
