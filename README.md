@@ -17,7 +17,7 @@ Nosso principal objetivo é modernizar o website utilizando as tecnologias e met
 | **Apadrinhamento**        | Antravision        | FINALIZADO | [Apadrinhamento](https://gpa-open-source-delta.vercel.app/apadrinhamento/index.html)
 | **Voluntariado**          | Tagarela           | FINALIZADO | [Voluntariado](https://gpa-open-source-delta.vercel.app/voluntariado/index.html)                  
 | **Informativo e Contato** | Cattus             | FINALIZADO         | [Informativo e Contato](https://gpa-informativo-e-contato.vercel.app/) |
-| **Financeiro**            | CatBioSearch       | FINALIZADO         | [Financeiro](https://gpafinanceiro.vercel.app)                         |
+| **Financeiro**            | CatBioSearch       | FINALIZADO         | [Financeiro](https://gpa-open-source-delta.vercel.app/catbiosearch-financeiro/index.html)                         |
 
 ---
 
