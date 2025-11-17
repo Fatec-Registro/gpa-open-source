@@ -80,3 +80,13 @@
     pointer-events: none;
     user-select: none;
 }
+
+.explaining-content-flow {
+  flex-wrap: nowrap;       
+  justify-content: center; 
+  gap: clamp(20px, 6vw, 61px);
+}
+
+.flow-arrow {
+  flex-shrink: 0; 
+}
