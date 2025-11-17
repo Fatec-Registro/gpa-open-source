@@ -11,6 +11,6 @@
 
 #### Descrição da Página de **Adoção & Doações**
 
-- **Link da Página Hospedada (Deploy):** `[Doações](https://gpa-open-source-delta.vercel.app/doacoes/index.html)`
+- **Link da Página Hospedada (Deploy):** [Doações](https://gpa-open-source-delta.vercel.app/doacoes/index.html)
 - **Melhorias Visuais (UI/UX):** A paleta de cores, a tipografia, o espaçamento e a organização dos elementos em tela foram aprimorados para oferecer uma experiência mais intuitiva e agradável. O design foi simplificado, priorizando clareza, equilíbrio visual e fácil compreensão por parte do usuário.
 - **Novas Funcionalidades Implementadas:** Foram adicionados botões mais chamativos e atrativos, um slider horizontal e uma lista melhor estruturada para exibição dos pets. Agora, os itens podem ser filtrados conforme o objetivo do usuário, tornando a navegação mais rápida, intuitiva e eficiente. Além disso, toda a interface foi otimizada para proporcionar uma interação mais simples e fluida.
