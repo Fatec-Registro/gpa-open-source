@@ -3,10 +3,10 @@
 | Integrante | Função no Projeto | Nickname |
 | :--- | :--- | :--- |
 | **Renato Hioji Okamoto Odake** | Desenvolvedor Frontend | RenatoHioji |
-| **Saulo de Freitas** | Desenvolvedor Frontend | [GitHub ID] |
-| **Ana Cristina Domingues** | Designer/UX/Desenvolvedor Frontend | [GitHub ID] |
-| **Ana Luiza Lara Pupo** | Designer/UXDesigner/UX | [GitHub ID] |
-| **Murilo dos Santos Mescyszyn** | Desenvolvedor Frontend | [GitHub ID] |
+| **Saulo de Freitas** | Desenvolvedor Frontend | Saulo217 |
+| **Ana Cristina Domingues** | Designer/UX/Desenvolvedor Frontend | Anacristinadomingues |
+| **Ana Luiza Lara Pupo** | Designer/UXDesigner/UX | analarap |
+| **Murilo dos Santos Mescyszyn** | Desenvolvedor Frontend | murilo587 |
 
 * **Link da Página Hospedada (Deploy):** `[INSERIR O LINK DO DEPLOY AQUI]`
 * **Melhorias Visuais (UI/UX):** Adicionada uma identidade visual para as telas, além disso seguimos com um padrão de indústria mais simples como o espaçamento em branco, hierarquia e outros processos.
